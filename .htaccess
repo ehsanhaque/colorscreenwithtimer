@@ -1,0 +1,12 @@
+# Force correct MIME type for sitemap.xml
+<Files "sitemap.xml">
+    Header set Content-Type "application/xml; charset=utf-8"
+</Files>
+
+# Ensure XML files are served with correct MIME type
+AddType application/xml .xml
+
+# Enable gzip compression for XML files (optional but recommended)
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/xml
+</IfModule>

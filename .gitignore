@@ -1,0 +1,18 @@
+# Configuration files with sensitive data
+*service-account*.json
+
+# SQLite databases
+*.db
+data/*.db
+
+# PHP temporary files
+*.log
+contact-form-errors.log
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+.claude/
