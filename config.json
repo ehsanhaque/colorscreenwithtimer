@@ -1,0 +1,11 @@
+{
+  "admin": {
+    "username": "ehsanhaque",
+    "password": "My$ql1t3@2723"
+  },
+  "recaptcha": {
+    "site_key": "6Ldkxy4sAAAAACsEMKklOPADTNJjv31GqzBkvWu1",
+    "api_key": "AIzaSyDMZd1SJULosCsPWGZQribr_P5KBsHjSe0",
+    "project_id": "gen-lang-client-0528067564"
+  }
+}

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Main English Pages -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <url>
+    <loc>https://colorscreenwithtimer.com/about.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://colorscreenwithtimer.com/faq.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://colorscreenwithtimer.com/contact.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://colorscreenwithtimer.com/license.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://colorscreenwithtimer.com/privacy-policy.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://colorscreenwithtimer.com/terms-and-conditions.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://colorscreenwithtimer.com/cookie-preferences.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Locale Pages (German) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/de/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (French) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/fr/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Spanish) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/es/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Ukrainian) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/uk/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Polish) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/pl/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Italian) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/it/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Turkish) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/tr/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Portuguese) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/pt/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Swedish) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/sv/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Japanese) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/ja/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Malay) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/ms/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+  <!-- Locale Pages (Korean) -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/ko/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://colorscreenwithtimer.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://colorscreenwithtimer.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://colorscreenwithtimer.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://colorscreenwithtimer.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://colorscreenwithtimer.com/uk/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://colorscreenwithtimer.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://colorscreenwithtimer.com/it/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://colorscreenwithtimer.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://colorscreenwithtimer.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="sv" href="https://colorscreenwithtimer.com/sv/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+</urlset>

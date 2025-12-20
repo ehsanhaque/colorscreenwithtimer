@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<!-- ==================== SEO META TAGS ==================== -->
+<title>Contact Us - Color Screen with Timer | Get in Touch</title>
+<meta content="Contact Color Screen with Timer. Send us your questions, feedback, bug reports, or feature suggestions. We're here to help!" name="description"/>
+
+<meta content="Color Screen with Timer" name="author"/>
+<meta content="index, follow" name="robots"/>
+
+<!-- ==================== OPEN GRAPH / FACEBOOK ==================== -->
+<meta content="website" property="og:type"/>
+<meta content="https://colorscreenwithtimer.com/contact.html" property="og:url"/>
+<meta content="Contact Us - Color Screen with Timer" property="og:title"/>
+<meta content="Get in touch with Color Screen with Timer. We're here to answer your questions and hear your feedback." property="og:description"/>
+<meta content="https://colorscreenwithtimer.com/og-image.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Color Screen with Timer" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<!-- ==================== TWITTER CARD ==================== -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://colorscreenwithtimer.com/contact.html" name="twitter:url"/>
+<meta content="Contact Us - Color Screen with Timer" name="twitter:title"/>
+<meta content="Get in touch with Color Screen with Timer. We're here to answer your questions and hear your feedback." name="twitter:description"/>
+<meta content="https://colorscreenwithtimer.com/twitter-image.jpg" name="twitter:image"/>
+<!-- ==================== FAVICON ==================== -->
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<meta content="#a855f7" name="theme-color"/>
+<!-- ==================== CANONICAL URL ==================== -->
+<link href="https://colorscreenwithtimer.com/contact.html" rel="canonical"/>
+<!-- ==================== STRUCTURED DATA (JSON-LD) ==================== -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Us - Color Screen with Timer",
+    "url": "https://colorscreenwithtimer.com/contact.html",
+    "description": "Get in touch with Color Screen with Timer. We're here to answer your questions and hear your feedback.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Color Screen with Timer",
+      "url": "https://colorscreenwithtimer.com/"
+    }
+  }
+  </script>
+<link href="/src/global.css?v=6" rel="stylesheet"/>
+<!-- Google reCAPTCHA -->
+<script async="" defer="" src="https://www.google.com/recaptcha/api.js"></script>
+<style>
+    .content-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg);
+    }
+
+    .content-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      padding: 3rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-card h2 {
+      color: var(--color-purple-600);
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .content-card p {
+      color: var(--color-gray-700);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-group label {
+      color: var(--color-gray-700);
+      font-weight: 500;
+      font-size: 0.875rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 0.75rem 1rem;
+      border: 1px solid #e5e7eb;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-family: inherit;
+      transition: all var(--transition-base);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--color-purple);
+      box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.1);
+    }
+
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-group .required {
+      color: #ef4444;
+    }
+
+    .recaptcha-container {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+
+    .submit-btn {
+      background: var(--gradient-primary);
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.875rem 2rem;
+      border: none;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition-base);
+      box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+    }
+
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(168, 85, 247, 0.4);
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .success-message,
+    .error-message {
+      padding: 1rem;
+      border-radius: var(--radius-sm);
+      margin-top: 1rem;
+      display: none;
+      text-align: center;
+    }
+
+    .success-message {
+      background: #d1fae5;
+      color: #065f46;
+      border: 1px solid #10b981;
+    }
+
+    .error-message {
+      background: #fee2e2;
+      color: #991b1b;
+      border: 1px solid #ef4444;
+    }
+
+    .success-message.show,
+    .error-message.show {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .content-card {
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+<style>
+    /* 3-Column Layout for Ads */
+    .container-with-ads {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg);
+      display: grid;
+      grid-template-columns: 160px 1fr 160px;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+
+    .sidebar-ad {
+      position: sticky;
+      top: var(--space-lg);
+    }
+
+    .main-content-narrow {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Mobile: hide sidebar ads, show only content */
+    @media (max-width: 1024px) {
+      .container-with-ads {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar-ad {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- ==================== HEADER WITH NAVIGATION ==================== -->
+<header class="header-nav">
+<div class="header-nav-container">
+<div class="site-title">
+<h1><a class="site-title-link" href="index.html">Color Screen with Timer</a></h1>
+</div>
+<nav class="nav-menu">
+<ul class="nav-list">
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="license.html">License</a></li>
+<li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy</a></li>
+<li class="nav-item"><a class="nav-link" href="terms-and-conditions.html">Terms</a></li>
+<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item lang-dropdown">
+<button class="lang-dropbtn" onclick="langChoose()">Language 🌐 <span class="lang-code">EN</span></button>
+<div class="lang-dropdown-content" id="langDropdown">
+<a href="/">English</a>
+<a href="/de">Deutsch</a>
+<a href="/fr">Français</a>
+<a href="/es">Español</a>
+<a href="/uk">Українська</a>
+<a href="/pl">Polski</a>
+<a href="/it">Italiano</a>
+<a href="/tr">Türkçe</a>
+<a href="/pt">Português</a>
+<a href="/sv">Svenska</a>
+<a href="/ja">日本語</a>
+<a href="/ms">Malay</a>
+<a href="/ko">한국어</a>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- ==================== AD PLACEHOLDER - HEADER BANNER ==================== -->
+<div style="text-align: center; margin: 1rem auto; max-width: 728px; display: block;">
+<div style="background: #f3f4f6; border: 2px dashed #d1d5db; padding: 2rem; border-radius: 0.5rem; color: #6b7280;">
+      AD PLACEHOLDER - Header Banner (728x90)
+    </div>
+</div>
+<!-- ==================== MAIN CONTENT WITH SIDEBAR ADS ==================== -->
+<div class="container-with-ads">
+<!-- ==================== LEFT SIDEBAR AD ==================== -->
+<aside class="sidebar-ad" style="visibility: visible;">
+<div style="background: #f3f4f6; border: 2px dashed #d1d5db; padding: 1rem; border-radius: 0.5rem; color: #6b7280; width: 160px; height: 600px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.75rem;">
+        AD<br/>PLACEHOLDER<br/><br/>Skyscraper<br/>(160x600)
+      </div>
+</aside>
+<!-- ==================== MAIN CONTENT ==================== -->
+<main class="main-content-narrow">
+<div class="content-container">
+<div class="content-card">
+<h2>Contact Us</h2>
+<p>
+            Have a question, suggestion, or feedback? We'd love to hear from you! Fill out the form below and we'll get back to you as soon as possible.
+          </p>
+<form class="contact-form" id="contactForm">
+<div class="form-group">
+<label for="email">Email <span class="required">*</span></label>
+<input id="email" name="email" placeholder="your.email@example.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="message">Message <span class="required">*</span></label>
+<textarea id="message" name="message" placeholder="Your message here..." required=""></textarea>
+</div>
+<!-- Google reCAPTCHA -->
+<div class="recaptcha-container">
+<div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+</div>
+<button class="submit-btn" type="submit">Send Message</button>
+<div class="success-message" id="successMessage">
+              Thank you for your message! We'll get back to you soon.
+            </div>
+<div class="error-message" id="errorMessage">
+              Oops! Something went wrong. Please try again.
+            </div>
+</form>
+</div>
+</div>
+</main>
+<!-- ==================== RIGHT SIDEBAR AD ==================== -->
+<aside class="sidebar-ad" style="visibility: visible;">
+<div style="background: #f3f4f6; border: 2px dashed #d1d5db; padding: 1rem; border-radius: 0.5rem; color: #6b7280; width: 160px; height: 600px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.75rem;">
+        AD<br/>PLACEHOLDER<br/><br/>Skyscraper<br/>(160x600)
+      </div>
+</aside>
+</div>
+<!-- ==================== BOTTOM AD SECTION ==================== -->
+<div style="max-width: 1400px; margin: 2rem auto; padding: 0 var(--space-lg); display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+<!-- Leaderboard Ad (728x90) -->
+<div style="text-align: center;">
+<div style="background: #f3f4f6; border: 2px dashed #d1d5db; padding: 1rem; border-radius: 0.5rem; color: #6b7280; width: 728px; height: 90px; display: inline-flex; align-items: center; justify-content: center; text-align: center; font-size: 0.875rem; max-width: 100%;">
+        AD PLACEHOLDER - Leaderboard (728x90)
+      </div>
+</div>
+<!-- Two Medium Rectangle Ads Side by Side (300x250 each) -->
+<div style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center;">
+<!-- Left Ad -->
+<div>
+<div style="background: #f3f4f6; border: 2px dashed #d1d5db; padding: 1rem; border-radius: 0.5rem; color: #6b7280; width: 300px; height: 250px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.875rem;">
+          AD PLACEHOLDER<br/>Medium Rectangle<br/>(300x250)
+        </div>
+</div>
+<!-- Right Ad -->
+<div>
+<div style="background: #f3f4f6; border: 2px dashed #d1d5db; padding: 1rem; border-radius: 0.5rem; color: #6b7280; width: 300px; height: 250px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 0.875rem;">
+          AD PLACEHOLDER<br/>Medium Rectangle<br/>(300x250)
+        </div>
+</div>
+</div>
+</div>
+<footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">
+<div class="eyebrow">colorscreenwithtimer.com</div>
+<p style="margin-bottom: 0.5rem;">
+      © 2025 <strong>Color Screen with Timer</strong>. Free to use for focus, lighting, photography, and more.
+    </p>
+<p style="color: var(--color-gray-500);">
+      Built with modern web technologies. No registration required. Works offline.
+    </p>
+</footer>
+<script src="/src/global.js?v=6"></script>
+<script>
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const form = this;
+      const submitBtn = form.querySelector('.submit-btn');
+      const successMsg = document.getElementById('successMessage');
+      const errorMsg = document.getElementById('errorMessage');
+
+      // Verify reCAPTCHA
+      const recaptchaResponse = grecaptcha.getResponse();
+      if (!recaptchaResponse) {
+        errorMsg.textContent = 'Please complete the reCAPTCHA verification.';
+        errorMsg.classList.add('show');
+        setTimeout(() => errorMsg.classList.remove('show'), 5000);
+        return;
+      }
+
+      // Disable submit button
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      // Hide previous messages
+      successMsg.classList.remove('show');
+      errorMsg.classList.remove('show');
+
+      // Collect form data
+      const formData = {
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+        'g-recaptcha-response': recaptchaResponse
+      };
+
+      // TODO: Replace with your actual form submission endpoint
+      // This is a placeholder - you'll need to set up a backend endpoint
+      // Example: fetch('/api/contact', { method: 'POST', body: JSON.stringify(formData) })
+
+      // Simulated submission (replace with actual API call)
+      setTimeout(() => {
+        // Success simulation
+        successMsg.classList.add('show');
+        form.reset();
+        grecaptcha.reset();
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+
+        // Hide success message after 10 seconds
+        setTimeout(() => successMsg.classList.remove('show'), 10000);
+
+        // For actual implementation, handle errors:
+        // .catch(error => {
+        //   errorMsg.textContent = 'Failed to send message. Please try again.';
+        //   errorMsg.classList.add('show');
+        //   submitBtn.disabled = false;
+        //   submitBtn.textContent = 'Send Message';
+        // });
+      }, 1500);
+    });
+  </script>
+<!-- ==================== COOKIE CONSENT ==================== -->
+<!-- Floating Cookie Icon -->
+<div class="cookie-float-icon" id="cookieFloatIcon" style="display: none;">
+<button class="cookie-icon-button" onclick="CookieManager.showBanner()" title="Cookie Settings">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"></path>
+<circle cx="8.5" cy="9.5" r="1.5"></circle>
+<circle cx="15" cy="9" r="1"></circle>
+<circle cx="11" cy="12" r="1"></circle>
+<circle cx="16" cy="14" r="1.5"></circle>
+</svg>
+</button>
+</div>
+<!-- Cookie Consent Banner -->
+<div class="cookie-banner" id="cookie-banner">
+<div class="cookie-banner-header">
+<div class="cookie-banner-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"></path>
+<circle cx="8.5" cy="9.5" r="1.5"></circle>
+<circle cx="15" cy="9" r="1"></circle>
+<circle cx="11" cy="12" r="1"></circle>
+<circle cx="16" cy="14" r="1.5"></circle>
+</svg>
+</div>
+<h3 class="cookie-banner-title">We use cookies</h3>
+</div>
+<p class="cookie-banner-text">
+      We use essential cookies to remember your preferences and optional cookies for analytics and advertising.
+      <a href="/cookie-preferences.html">Learn more</a>
+</p>
+<div class="cookie-banner-actions">
+<button class="cookie-btn cookie-btn-reject" onclick="handleCookieReject()">Reject</button>
+<button class="cookie-btn cookie-btn-customize" onclick="window.location.href='/cookie-preferences.html'">Customize</button>
+<button class="cookie-btn cookie-btn-accept" onclick="handleCookieAccept()">Accept</button>
+</div>
+</div>
+<!-- Cookie Manager Script -->
+<script src="/src/cookie-manager.js?v=1"></script>
+<script src="/src/preference-tracker.js?v=6"></script>
+<script>
+    function handleCookieAccept() {
+      CookieManager.setConsent({
+        essential: true,
+        analytics: true,
+        advertising: true
+      });
+      CookieManager.hideBanner();
+      showCookieIcon();
+    }
+
+    function handleCookieReject() {
+      CookieManager.setConsent({
+        essential: true,
+        analytics: false,
+        advertising: false
+      });
+      CookieManager.hideBanner();
+      showCookieIcon();
+    }
+
+    function showCookieIcon() {
+      document.getElementById('cookieFloatIcon').style.display = 'block';
+    }
+
+    // Show cookie icon if consent has already been given
+    window.addEventListener('DOMContentLoaded', function() {
+      if (CookieManager.hasConsent()) {
+        showCookieIcon();
+      }
+    });
+  </script>
+</body>
+</html>

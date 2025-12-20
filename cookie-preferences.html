@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<!-- ==================== SEO META TAGS ==================== -->
+<title>Cookie Preferences - Color Screen with Timer | Manage Your Privacy</title>
+<meta content="Manage your cookie preferences for Color Screen with Timer. Control essential, analytics, and advertising cookies to customize your privacy settings." name="description"/>
+
+<meta content="Color Screen with Timer" name="author"/>
+<meta content="index, follow" name="robots"/>
+
+<!-- ==================== OPEN GRAPH / FACEBOOK ==================== -->
+<meta content="website" property="og:type"/>
+<meta content="https://colorscreenwithtimer.com/cookie-preferences.html" property="og:url"/>
+<meta content="Cookie Preferences - Color Screen with Timer" property="og:title"/>
+<meta content="Manage your cookie preferences and customize your privacy settings." property="og:description"/>
+<meta content="https://colorscreenwithtimer.com/og-image.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Color Screen with Timer" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<!-- ==================== TWITTER CARD ==================== -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://colorscreenwithtimer.com/cookie-preferences.html" name="twitter:url"/>
+<meta content="Cookie Preferences - Color Screen with Timer" name="twitter:title"/>
+<meta content="Manage your cookie preferences and customize your privacy settings." name="twitter:description"/>
+<meta content="https://colorscreenwithtimer.com/twitter-image.jpg" name="twitter:image"/>
+<!-- ==================== FAVICON ==================== -->
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/site.webmanifest" rel="manifest"/>
+<meta content="#a855f7" name="theme-color"/>
+<!-- ==================== CANONICAL URL ==================== -->
+<link href="https://colorscreenwithtimer.com/cookie-preferences.html" rel="canonical"/>
+<!-- ==================== STRUCTURED DATA (JSON-LD) ==================== -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cookie Preferences - Color Screen with Timer",
+    "url": "https://colorscreenwithtimer.com/cookie-preferences.html",
+    "description": "Manage your cookie preferences and customize your privacy settings.",
+    "inLanguage": "en-US",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Color Screen with Timer",
+      "url": "https://colorscreenwithtimer.com/"
+    }
+  }
+  </script>
+<link href="/src/global.css?v=6" rel="stylesheet"/>
+<style>
+    .content-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: var(--space-xl) var(--space-lg);
+    }
+
+    .content-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      padding: 3rem;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-card h2 {
+      color: var(--color-purple-600);
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .content-card p {
+      color: var(--color-gray-700);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .cookie-category {
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      background: white;
+    }
+
+    .cookie-category-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .cookie-category h3 {
+      color: var(--color-gray-900);
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .cookie-category p {
+      color: var(--color-gray-600);
+      font-size: 0.875rem;
+      margin-bottom: 0;
+    }
+
+    .toggle-switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 26px;
+    }
+
+    .toggle-switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .toggle-slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #cbd5e1;
+      transition: 0.3s;
+      border-radius: 26px;
+    }
+
+    .toggle-slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: 0.3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .toggle-slider {
+      background-color: var(--color-purple);
+    }
+
+    input:checked + .toggle-slider:before {
+      transform: translateX(24px);
+    }
+
+    input:disabled + .toggle-slider {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .always-active {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #4338ca;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 1rem;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 0.875rem 2rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all var(--transition-base);
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--gradient-primary);
+      color: white;
+      box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(168, 85, 247, 0.4);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--color-gray-700);
+      border: 1px solid #e5e7eb;
+    }
+
+    .btn-secondary:hover {
+      background: #f9fafb;
+    }
+
+    @media (max-width: 768px) {
+      .content-card {
+        padding: 2rem 1.5rem;
+      }
+
+      .action-buttons {
+        flex-direction: column;
+      }
+
+      .cookie-category-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKQFWSY642"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EKQFWSY642');
+</script>
+
+</head>
+<body>
+<!-- ==================== HEADER WITH NAVIGATION ==================== -->
+<header class="header-nav">
+<div class="header-nav-container">
+<div class="site-title">
+<h1><a class="site-title-link" href="index.html">Color Screen with Timer</a></h1>
+</div>
+<nav class="nav-menu">
+<ul class="nav-list">
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="license.html">License</a></li>
+<li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy</a></li>
+<li class="nav-item"><a class="nav-link" href="terms-and-conditions.html">Terms</a></li>
+<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item lang-dropdown">
+<button class="lang-dropbtn" onclick="langChoose()">Language 🌐 <span class="lang-code">EN</span></button>
+<div class="lang-dropdown-content" id="langDropdown">
+<a href="/">English</a>
+<a href="/de">Deutsch</a>
+<a href="/fr">Français</a>
+<a href="/es">Español</a>
+<a href="/uk">Українська</a>
+<a href="/pl">Polski</a>
+<a href="/it">Italiano</a>
+<a href="/tr">Türkçe</a>
+<a href="/pt">Português</a>
+<a href="/sv">Svenska</a>
+<a href="/ja">日本語</a>
+<a href="/ms">Malay</a>
+<a href="/ko">한국어</a>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- ==================== MAIN CONTENT ==================== -->
+<main class="content-container">
+<div class="content-card">
+<h2>Cookie Preferences</h2>
+<p>
+        We use cookies to enhance your experience on our website. You can customize your cookie preferences below.
+        Essential cookies are always active as they are necessary for the website to function properly.
+      </p>
+<!-- Essential Cookies -->
+<div class="cookie-category">
+<div class="cookie-category-header">
+<div>
+<h3>Essential Cookies</h3>
+</div>
+<span class="always-active">Always Active</span>
+</div>
+<p>
+          These cookies are necessary for the website to function and cannot be disabled. They include your language preference,
+          timer settings, and UI preferences (selected color screen).
+        </p>
+</div>
+<!-- Analytics Cookies -->
+<div class="cookie-category">
+<div class="cookie-category-header">
+<div>
+<h3>Analytics Cookies</h3>
+</div>
+<label class="toggle-switch">
+<input id="analytics-toggle" type="checkbox"/>
+<span class="toggle-slider"></span>
+</label>
+</div>
+<p>
+          These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.
+          We use Google Analytics to improve our service.
+        </p>
+</div>
+<div class="cookie-category">
+<div class="cookie-category-header">
+<div>
+<h3>Advertising Cookies</h3>
+</div>
+<label class="toggle-switch">
+<input id="advertising-toggle" type="checkbox"/>
+<span class="toggle-slider"></span>
+</label>
+</div>
+<p>
+          These cookies are used to show you ads that are relevant to you. We use Google AdSense to display advertisements.
+          These cookies may track your browsing activity across different websites.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="action-buttons">
+<button class="btn btn-secondary" onclick="rejectAll()">Reject All</button>
+<button class="btn btn-primary" onclick="savePreferences()">Save Preferences</button>
+<button class="btn btn-primary" onclick="acceptAll()">Accept All</button>
+</div>
+</div>
+</main>
+<footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">
+<div class="eyebrow">colorscreenwithtimer.com</div>
+<p style="margin-bottom: 0.5rem;">
+      © 2025 <strong>Color Screen with Timer</strong>. Free to use for focus, lighting, photography, and more.
+    </p>
+<p style="color: var(--color-gray-500);">
+      Built with modern web technologies. No registration required. Works offline.
+    </p>
+</footer>
+<script src="/src/global.js?v=6"></script>
+<script src="/src/cookie-manager.js?v=1"></script>
+<script src="/src/preference-tracker.js?v=6"></script>
+<script>
+    // Load current preferences
+    window.addEventListener('DOMContentLoaded', function() {
+      const consent = CookieManager.getConsent();
+
+      document.getElementById('analytics-toggle').checked = consent.analytics;
+      document.getElementById('advertising-toggle').checked = consent.advertising;
+    });
+
+    function savePreferences() {
+      const analytics = document.getElementById('analytics-toggle').checked;
+      const advertising = document.getElementById('advertising-toggle').checked;
+
+      CookieManager.setConsent({
+        essential: true,
+        analytics: analytics,
+        advertising: advertising
+      });
+
+      // Show confirmation
+      alert('Your cookie preferences have been saved!');
+
+      // Redirect back to homepage or previous page
+      setTimeout(() => {
+        window.location.href = document.referrer || '/';
+      }, 500);
+    }
+
+    function acceptAll() {
+      CookieManager.setConsent({
+        essential: true,
+        analytics: true,
+        advertising: true
+      });
+
+      alert('All cookies have been accepted!');
+      setTimeout(() => {
+        window.location.href = document.referrer || '/';
+      }, 500);
+    }
+
+    function rejectAll() {
+      CookieManager.setConsent({
+        essential: true,
+        analytics: false,
+        advertising: false
+      });
+
+      alert('Only essential cookies will be used!');
+      setTimeout(() => {
+        window.location.href = document.referrer || '/';
+      }, 500);
+    }
+  </script>
+</body>
+</html>

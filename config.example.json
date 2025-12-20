@@ -1,0 +1,11 @@
+{
+  "admin": {
+    "username": "admin",
+    "password": "changeme123"
+  },
+  "recaptcha": {
+    "site_key": "6Ldkxy4sAAAAACsEMKklOPADTNJjv31GqzBkvWu1",
+    "api_key": "YOUR_GOOGLE_CLOUD_API_KEY_HERE",
+    "project_id": "gen-lang-client-0528067564"
+  }
+}

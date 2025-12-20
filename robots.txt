@@ -1,0 +1,11 @@
+# Robots.txt for Color Screen with Timer
+# https://colorscreenwithtimer.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://colorscreenwithtimer.com/sitemap.xml
+
+# Crawl-delay (optional - prevents aggressive crawling)
+Crawl-delay: 1
