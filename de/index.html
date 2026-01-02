@@ -79,7 +79,7 @@
      crossorigin="anonymous"></script>
 
   <!-- ==================== STYLESHEETS ==================== -->
-  <link rel="stylesheet" href="/src/global.css?v=6">
+  <link rel="stylesheet" href="/src/global.css?v=15">
 
   <!-- ==================== PRELOAD CRITICAL RESOURCES ==================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,7 +104,43 @@
       <div class="site-title">
         <h1><a href="/de/" class="site-title-link">Farbbildschirm mit Timer</a></h1>
       </div>
-      <nav class="nav-menu">
+
+      <!-- Mobile Controls (Globe on LEFT, Hamburger on RIGHT) -->
+      <div class="mobile-controls">
+        <!-- Language Globe Button (Mobile) -->
+        <button class="mobile-lang-btn" id="mobileLangBtn" aria-label="Select language" aria-expanded="false">
+          🌐
+        </button>
+
+        <!-- Hamburger Menu Button (Mobile) -->
+        <button class="hamburger-menu" id="hamburgerMenu" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Language Menu -->
+      <div class="mobile-lang-menu" id="mobileLangMenu">
+        <ul class="mobile-lang-list">
+          <li><a href="/">English</a></li>
+          <li><a href="/de">Deutsch</a></li>
+          <li><a href="/fr">Français</a></li>
+          <li><a href="/es">Español</a></li>
+          <li><a href="/uk">Українська</a></li>
+          <li><a href="/pl">Polski</a></li>
+          <li><a href="/it">Italiano</a></li>
+          <li><a href="/tr">Türkçe</a></li>
+          <li><a href="/pt">Português</a></li>
+          <li><a href="/sv">Svenska</a></li>
+          <li><a href="/ja">日本語</a></li>
+          <li><a href="/ms">Malay</a></li>
+          <li><a href="/ko">한국어</a></li>
+        </ul>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
         <ul class="nav-list">
           <li class="nav-item"><a href="/about.html" class="nav-link">Über uns</a></li>
           <li class="nav-item"><a href="/license.html" class="nav-link">Lizenz</a></li>
@@ -488,7 +524,7 @@
   </footer>
 
   <!-- ==================== JAVASCRIPT ==================== -->
-  <script src="/src/global.js?v=4"></script>
+  <script src="/src/global.js?v=13"></script>
 
   <!-- ==================== ANALYTICS (Replace with your tracking code) ==================== -->
   <!-- Google Analytics -->

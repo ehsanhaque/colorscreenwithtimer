@@ -532,6 +532,132 @@ if (document.readyState === 'loading') {
 window.addEventListener('load', highlightActivePage);
 
 // ==========================================
+// MOBILE MENU TOGGLES
+// ==========================================
+
+const hamburgerMenu = document.getElementById('hamburgerMenu');
+const navMenu = document.getElementById('navMenu');
+const mobileLangBtn = document.getElementById('mobileLangBtn');
+const mobileLangMenu = document.getElementById('mobileLangMenu');
+const mobileControls = document.querySelector('.mobile-controls');
+
+// Function to close nav menu
+function closeMenu() {
+  if (hamburgerMenu && navMenu) {
+    hamburgerMenu.classList.remove('active');
+    navMenu.classList.remove('active');
+    hamburgerMenu.setAttribute('aria-expanded', 'false');
+    if (mobileControls) mobileControls.classList.remove('menu-open');
+    document.body.style.overflow = '';
+  }
+}
+
+// Function to open nav menu
+function openMenu() {
+  if (hamburgerMenu && navMenu) {
+    // Close language menu if open
+    closeLangMenu();
+    hamburgerMenu.classList.add('active');
+    navMenu.classList.add('active');
+    hamburgerMenu.setAttribute('aria-expanded', 'true');
+    if (mobileControls) mobileControls.classList.add('menu-open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+// Function to close language menu
+function closeLangMenu() {
+  if (mobileLangBtn && mobileLangMenu) {
+    mobileLangBtn.classList.remove('active');
+    mobileLangMenu.classList.remove('active');
+    mobileLangBtn.setAttribute('aria-expanded', 'false');
+    if (mobileControls) mobileControls.classList.remove('menu-open');
+    document.body.style.overflow = '';
+  }
+}
+
+// Function to open language menu
+function openLangMenu() {
+  if (mobileLangBtn && mobileLangMenu) {
+    // Close nav menu if open
+    closeMenu();
+    mobileLangBtn.classList.add('active');
+    mobileLangMenu.classList.add('active');
+    mobileLangBtn.setAttribute('aria-expanded', 'true');
+    if (mobileControls) mobileControls.classList.add('menu-open');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+// Hamburger menu
+if (hamburgerMenu && navMenu) {
+  hamburgerMenu.addEventListener('click', () => {
+    const isExpanded = navMenu.classList.contains('active');
+    if (isExpanded) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  // Close menu when clicking on a nav link
+  const navLinks = navMenu.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+}
+
+// Language menu
+if (mobileLangBtn && mobileLangMenu) {
+  mobileLangBtn.addEventListener('click', () => {
+    const isExpanded = mobileLangMenu.classList.contains('active');
+    if (isExpanded) {
+      closeLangMenu();
+    } else {
+      openLangMenu();
+    }
+  });
+
+  // Don't add click handlers to language links - let them navigate naturally
+  // The page load initialization will reset the menu state
+}
+
+// Close both menus when clicking outside
+document.addEventListener('click', (e) => {
+  const mobileControls = document.querySelector('.mobile-controls');
+  if (mobileControls && !mobileControls.contains(e.target) &&
+      !navMenu.contains(e.target) && !mobileLangMenu.contains(e.target)) {
+    closeMenu();
+    closeLangMenu();
+  }
+});
+
+// Close both menus on window resize to desktop size
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768) {
+    closeMenu();
+    closeLangMenu();
+  }
+});
+
+// Ensure menus are closed on page load
+if (mobileControls) {
+  mobileControls.classList.remove('menu-open');
+}
+if (navMenu) {
+  navMenu.classList.remove('active');
+}
+if (mobileLangMenu) {
+  mobileLangMenu.classList.remove('active');
+}
+if (hamburgerMenu) {
+  hamburgerMenu.classList.remove('active');
+}
+if (mobileLangBtn) {
+  mobileLangBtn.classList.remove('active');
+}
+
+// ==========================================
 // INITIALIZATION
 // ==========================================
 
