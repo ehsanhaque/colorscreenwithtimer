@@ -1361,3 +1361,210 @@ select:focus-visible {
     min-width: 100%;
   }
 }
+
+/* ==========================================
+   MOBILE HAMBURGER MENU & LANGUAGE SELECTOR
+   ========================================== */
+
+/* Hide mobile elements by default (desktop) */
+.mobile-controls {
+  display: none;
+}
+
+.mobile-lang-btn {
+  display: none;
+}
+
+.mobile-lang-menu {
+  display: none;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1002;
+  position: relative;
+}
+
+.hamburger-line {
+  width: 2rem;
+  height: 0.25rem;
+  background: var(--color-gray-700);
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger animation when menu is open */
+.hamburger-menu.active .hamburger-line:nth-child(1) {
+  transform: translateY(0.625rem) rotate(45deg);
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-line:nth-child(3) {
+  transform: translateY(-0.625rem) rotate(-45deg);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .header-nav-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1rem 1.5rem;
+  }
+
+  .site-title {
+    flex: 1;
+  }
+
+  .site-title-link {
+    font-size: 1.1rem;
+  }
+
+  /* Show mobile controls */
+  .mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .mobile-lang-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+    transition: transform 0.2s ease;
+  }
+
+  .mobile-lang-btn:hover {
+    transform: scale(1.1);
+  }
+
+  /* Hide mobile controls when any menu is open */
+  .mobile-controls.menu-open .mobile-lang-btn,
+  .mobile-controls.menu-open .hamburger-menu {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .mobile-lang-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .mobile-lang-menu.active {
+    right: 0;
+  }
+
+  .mobile-lang-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .mobile-lang-list li {
+    border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+  }
+
+  .mobile-lang-list li:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-lang-list a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: var(--color-gray-700);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all var(--transition-base);
+  }
+
+  .mobile-lang-list a:hover {
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(6, 182, 212, 0.1));
+    color: var(--color-purple);
+    padding-left: 2rem;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    z-index: 1001;
+  }
+
+  /* Hide language dropdown in mobile nav menu */
+  .nav-menu .lang-dropdown {
+    display: none;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 0.875rem 1.5rem;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(229, 231, 235, 0.3);
+    font-size: 0.95rem;
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+}
