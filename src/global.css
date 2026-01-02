@@ -451,6 +451,38 @@ body {
   overflow: visible;
 }
 
+/* iOS/Fallback Fullscreen Mode */
+.screen-container.ios-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh; /* Use dynamic viewport height for mobile browsers */
+  padding-bottom: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  z-index: 99999;
+  margin: 0;
+}
+
+/* Hide everything except the fullscreen container when in iOS fullscreen */
+body:has(.ios-fullscreen) > *:not(script):not(style) {
+  display: none !important;
+}
+
+body:has(.ios-fullscreen) .ios-fullscreen {
+  display: block !important;
+}
+
+body:has(.ios-fullscreen) {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
 #screen {
   position: absolute;
   top: 0;

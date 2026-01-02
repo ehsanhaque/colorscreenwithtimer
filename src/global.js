@@ -93,18 +93,129 @@ if (elements.screen && elements.picker) {
  * Toggles fullscreen mode for the color screen
  */
 function toggleFullscreen() {
-  if (!document.fullscreenElement) {
-    elements.screenContainer.requestFullscreen?.();
+  // Check if we're using iOS-style fullscreen (class-based)
+  const isIOSFullscreen = elements.screenContainer.classList.contains('ios-fullscreen');
+
+  // Try standard Fullscreen API first
+  if (!document.fullscreenElement && !isIOSFullscreen) {
+    // Try standard fullscreen API
+    if (elements.screenContainer.requestFullscreen) {
+      elements.screenContainer.requestFullscreen();
+    } else if (elements.screenContainer.webkitRequestFullscreen) {
+      elements.screenContainer.webkitRequestFullscreen();
+    } else {
+      // Fallback for iOS and browsers without Fullscreen API
+      enterIOSFullscreen();
+    }
   } else {
-    document.exitFullscreen?.();
+    // Exit fullscreen
+    if (document.fullscreenElement) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      }
+    } else if (isIOSFullscreen) {
+      exitIOSFullscreen();
+    }
   }
+}
+
+// Store original parent for restoring later
+let originalParent = null;
+let originalNextSibling = null;
+
+/**
+ * Enter fullscreen mode for iOS/unsupported browsers
+ */
+function enterIOSFullscreen() {
+  // Store original position
+  originalParent = elements.screenContainer.parentNode;
+  originalNextSibling = elements.screenContainer.nextSibling;
+
+  // Move screen to body
+  document.body.appendChild(elements.screenContainer);
+
+  // Add fullscreen class
+  elements.screenContainer.classList.add('ios-fullscreen');
+  document.body.style.overflow = 'hidden';
+
+  // Try to hide address bar on mobile
+  window.scrollTo(0, 1);
+  setTimeout(() => window.scrollTo(0, 0), 0);
+
+  updateFullscreenButtonVisibility();
+
+  // Update timer overlay visibility
+  if (overlay) {
+    updateOverlayVisibility();
+  }
+
+  // Show hint for exiting (briefly)
+  showExitHint();
+}
+
+/**
+ * Exit fullscreen mode for iOS/unsupported browsers
+ */
+function exitIOSFullscreen() {
+  elements.screenContainer.classList.remove('ios-fullscreen');
+  document.body.style.overflow = '';
+
+  // Restore original position
+  if (originalParent) {
+    if (originalNextSibling) {
+      originalParent.insertBefore(elements.screenContainer, originalNextSibling);
+    } else {
+      originalParent.appendChild(elements.screenContainer);
+    }
+  }
+
+  updateFullscreenButtonVisibility();
+
+  // Update timer overlay visibility
+  if (overlay) {
+    updateOverlayVisibility();
+  }
+}
+
+/**
+ * Show a hint about how to exit fullscreen
+ */
+function showExitHint() {
+  const hint = document.createElement('div');
+  hint.className = 'fullscreen-exit-hint';
+  hint.style.cssText = `
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 10;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  `;
+  hint.textContent = 'Double-tap to exit fullscreen';
+
+  // Append to screen container so it appears on top of the screen
+  elements.screenContainer.appendChild(hint);
+
+  setTimeout(() => {
+    hint.style.opacity = '0';
+    setTimeout(() => hint.remove(), 300);
+  }, 3000);
 }
 
 /**
  * Updates fullscreen button visibility
  */
 function updateFullscreenButtonVisibility() {
-  const isFullscreen = !!document.fullscreenElement;
+  const isFullscreen = !!document.fullscreenElement || elements.screenContainer.classList.contains('ios-fullscreen');
   if (isFullscreen) {
     elements.fullscreenBtn.style.display = 'none';
   } else {
@@ -125,6 +236,24 @@ document.addEventListener('keydown', (e) => {
 
 // Listen for fullscreen changes to hide/show button
 document.addEventListener('fullscreenchange', updateFullscreenButtonVisibility);
+
+// Add double-tap to exit iOS fullscreen on mobile
+let lastTap = 0;
+if (elements.screenContainer) {
+  elements.screenContainer.addEventListener('touchend', (e) => {
+    const currentTime = new Date().getTime();
+    const tapLength = currentTime - lastTap;
+
+    if (tapLength < 300 && tapLength > 0) {
+      // Double tap detected
+      if (elements.screenContainer.classList.contains('ios-fullscreen')) {
+        e.preventDefault();
+        exitIOSFullscreen();
+      }
+    }
+    lastTap = currentTime;
+  });
+}
 
 // ==========================================
 // TIMER FUNCTIONALITY
@@ -369,8 +498,8 @@ function onTimerComplete() {
  * Updates timer overlay visibility based on fullscreen state
  */
 function updateOverlayVisibility() {
-  const isFullscreen = !!document.fullscreenElement;
-  const isScreenFullscreen = elements.screenContainer.contains(document.fullscreenElement);
+  const isFullscreen = !!document.fullscreenElement || elements.screenContainer.classList.contains('ios-fullscreen');
+  const isScreenFullscreen = elements.screenContainer.contains(document.fullscreenElement) || elements.screenContainer.classList.contains('ios-fullscreen');
   const showTimer = elements.fullscreenTimerToggle.checked;
 
   const shouldShow = isFullscreen && isScreenFullscreen && showTimer;
