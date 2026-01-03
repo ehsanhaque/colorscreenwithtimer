@@ -32,13 +32,240 @@ const elements = {
 // Only create overlay if screen element exists (i.e., we're on the timer page)
 let overlay = null;
 let overlayDisplay = null;
+let overlayTextNode = null;
 
 if (elements.screen) {
   overlay = document.createElement('div');
   overlay.className = 'timer-overlay';
-  overlay.innerHTML = '<span id="overlayDisplay">00:00:00</span>';
+
+  overlayDisplay = document.createElement('span');
+  overlayDisplay.id = 'overlayDisplay';
+
+  // Create text node and store reference
+  overlayTextNode = document.createTextNode('00:00:00');
+  overlayDisplay.appendChild(overlayTextNode);
+
+  // Add corner elements
+  const cornerTL = document.createElement('div');
+  cornerTL.className = 'corner-tl';
+  overlayDisplay.appendChild(cornerTL);
+
+  const cornerTR = document.createElement('div');
+  cornerTR.className = 'corner-tr';
+  overlayDisplay.appendChild(cornerTR);
+
+  const cornerBL = document.createElement('div');
+  cornerBL.className = 'corner-bl';
+  overlayDisplay.appendChild(cornerBL);
+
+  const cornerBR = document.createElement('div');
+  cornerBR.className = 'corner-br';
+  overlayDisplay.appendChild(cornerBR);
+
+  overlay.appendChild(overlayDisplay);
   elements.screen.appendChild(overlay);
-  overlayDisplay = document.getElementById('overlayDisplay');
+
+  // Make timer overlay draggable and resizable by font size
+  let isDragging = false;
+  let isResizing = false;
+  let currentX, currentY, initialX, initialY;
+  let xOffset = 0;
+  let yOffset = 0;
+  let startFontSize, startMouseX, startMouseY;
+  let resizeCorner = null;
+  let clickTimeout = null;
+
+  const corners = overlay.querySelectorAll('.corner-tl, .corner-tr, .corner-bl, .corner-br');
+
+  // Click/tap on text to show corners and enable drag
+  overlayDisplay.addEventListener('mousedown', handleTextMouseDown);
+  overlayDisplay.addEventListener('touchstart', handleTextTouchStart, { passive: false });
+
+  // Corner resize events
+  corners.forEach(corner => {
+    corner.addEventListener('mousedown', resizeStart);
+    corner.addEventListener('touchstart', resizeStart, { passive: false });
+  });
+
+  document.addEventListener('mousemove', handleMove);
+  document.addEventListener('touchmove', handleMove, { passive: false });
+  document.addEventListener('mouseup', handleEnd);
+  document.addEventListener('touchend', handleEnd);
+
+  function handleTextMouseDown(e) {
+    // Don't start drag if clicking on a corner
+    if (e.target.classList.contains('corner-tl') ||
+        e.target.classList.contains('corner-tr') ||
+        e.target.classList.contains('corner-bl') ||
+        e.target.classList.contains('corner-br')) {
+      return;
+    }
+
+    e.preventDefault(); // Prevent text selection
+
+    const clientX = e.clientX;
+    const clientY = e.clientY;
+
+    const rect = overlay.getBoundingClientRect();
+    const parentRect = overlay.parentElement.getBoundingClientRect();
+
+    // Calculate offset from mouse position to element position
+    initialX = clientX - rect.left + parentRect.left;
+    initialY = clientY - rect.top + parentRect.top;
+
+    isDragging = true;
+    overlay.classList.add('dragging');
+    overlayDisplay.style.cursor = 'grabbing';
+  }
+
+  function handleTextTouchStart(e) {
+    // Don't start drag if touching a corner
+    if (e.target.classList.contains('corner-tl') ||
+        e.target.classList.contains('corner-tr') ||
+        e.target.classList.contains('corner-bl') ||
+        e.target.classList.contains('corner-br')) {
+      return;
+    }
+
+    e.preventDefault();
+
+    // Show corners on touch
+    overlayDisplay.classList.add('active');
+
+    const clientX = e.touches[0].clientX;
+    const clientY = e.touches[0].clientY;
+
+    const rect = overlay.getBoundingClientRect();
+    const parentRect = overlay.parentElement.getBoundingClientRect();
+
+    // Calculate offset from touch position to element position
+    initialX = clientX - rect.left + parentRect.left;
+    initialY = clientY - rect.top + parentRect.top;
+
+    isDragging = true;
+    overlay.classList.add('dragging');
+  }
+
+  function resizeStart(e) {
+    e.stopPropagation();
+    e.preventDefault();
+
+    if (clickTimeout) {
+      clearTimeout(clickTimeout);
+      clickTimeout = null;
+    }
+
+    overlayDisplay.classList.add('active');
+    isResizing = true;
+    resizeCorner = e.target;
+
+    // Get current computed font size
+    const computedStyle = window.getComputedStyle(overlayDisplay);
+    startFontSize = parseFloat(computedStyle.fontSize);
+    startMouseX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+    startMouseY = e.type === 'touchstart' ? e.touches[0].clientY : e.clientY;
+  }
+
+  function handleMove(e) {
+    if (isResizing) {
+      e.preventDefault();
+
+      const clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+      const clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
+
+      // Calculate movement deltas
+      const deltaX = clientX - startMouseX;
+      const deltaY = clientY - startMouseY;
+
+      // Calculate which corner is being dragged to determine proper direction
+      const corner = resizeCorner.className;
+      let scaleFactor = 0;
+
+      // For each corner, dragging away from center = positive, towards center = negative
+      if (corner.includes('corner-br')) {
+        scaleFactor = deltaX + deltaY; // bottom-right: drag right/down to increase
+      } else if (corner.includes('corner-bl')) {
+        scaleFactor = -deltaX + deltaY; // bottom-left: drag left/down to increase
+      } else if (corner.includes('corner-tr')) {
+        scaleFactor = deltaX - deltaY; // top-right: drag right/up to increase
+      } else if (corner.includes('corner-tl')) {
+        scaleFactor = -deltaX - deltaY; // top-left: drag left/up to increase
+      }
+
+      // Scale factor: 1px movement = 0.5px font size change
+      const newFontSize = Math.max(16, Math.min(400, startFontSize + (scaleFactor * 0.5)));
+
+      overlay.style.fontSize = newFontSize + 'px';
+
+    } else if (isDragging) {
+      e.preventDefault();
+
+      const clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+      const clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
+
+      // Get parent dimensions for boundary checking
+      const parent = overlay.parentElement;
+      const parentRect = parent.getBoundingClientRect();
+      const overlayRect = overlay.getBoundingClientRect();
+
+      // Calculate new position (mouse position - initial offset)
+      let newX = clientX - initialX;
+      let newY = clientY - initialY;
+
+      // Calculate boundaries
+      const maxX = parentRect.width - overlayRect.width;
+      const maxY = parentRect.height - overlayRect.height;
+
+      // Constrain to parent boundaries
+      newX = Math.max(0, Math.min(newX, maxX));
+      newY = Math.max(0, Math.min(newY, maxY));
+
+      overlay.style.left = newX + 'px';
+      overlay.style.top = newY + 'px';
+    }
+  }
+
+  function handleEnd(e) {
+    if (clickTimeout) {
+      clearTimeout(clickTimeout);
+      clickTimeout = null;
+    }
+
+    if (isDragging) {
+      isDragging = false;
+      overlay.classList.remove('dragging');
+      overlayDisplay.style.cursor = 'grab';
+    }
+
+    if (isResizing) {
+      isResizing = false;
+    }
+
+    // Hide corners after 2 seconds of inactivity
+    setTimeout(() => {
+      if (!isDragging && !isResizing) {
+        overlayDisplay.classList.remove('active');
+      }
+    }, 2000);
+  }
+
+  // Handle window resize to adjust timer position
+  window.addEventListener('resize', () => {
+    if (overlay.style.left && overlay.style.top) {
+      const parent = overlay.parentElement;
+      const parentRect = parent.getBoundingClientRect();
+      const overlayRect = overlay.getBoundingClientRect();
+
+      const maxX = parentRect.width - overlayRect.width;
+      const maxY = parentRect.height - overlayRect.height;
+
+      const currentLeft = parseInt(overlay.style.left) || 0;
+      const currentTop = parseInt(overlay.style.top) || 0;
+
+      overlay.style.left = Math.max(0, Math.min(currentLeft, maxX)) + 'px';
+      overlay.style.top = Math.max(0, Math.min(currentTop, maxY)) + 'px';
+    }
+  });
 }
 
 // ==========================================
@@ -49,6 +276,25 @@ if (elements.screen) {
 if (elements.screen && elements.picker) {
 
   /**
+   * Calculate relative luminance for a color
+   * @param {string} hex - Hex color code
+   * @returns {number} Relative luminance (0-1)
+   */
+  function getLuminance(hex) {
+    // Convert hex to RGB
+    const r = parseInt(hex.slice(1, 3), 16) / 255;
+    const g = parseInt(hex.slice(3, 5), 16) / 255;
+    const b = parseInt(hex.slice(5, 7), 16) / 255;
+
+    // Apply gamma correction
+    const rs = r <= 0.03928 ? r / 12.92 : Math.pow((r + 0.055) / 1.055, 2.4);
+    const gs = g <= 0.03928 ? g / 12.92 : Math.pow((g + 0.055) / 1.055, 2.4);
+    const bs = b <= 0.03928 ? b / 12.92 : Math.pow((b + 0.055) / 1.055, 2.4);
+
+    return 0.2126 * rs + 0.7152 * gs + 0.0722 * bs;
+  }
+
+  /**
    * Sets the screen background color and updates the color picker
    * @param {string} color - Hex color code
    */
@@ -56,6 +302,20 @@ if (elements.screen && elements.picker) {
     elements.screenContainer.style.background = color;
     elements.screen.style.background = color;
     elements.picker.value = color;
+
+    // Calculate contrast color for timer text
+    if (overlayDisplay) {
+      const luminance = getLuminance(color);
+      // Use white text on dark backgrounds, black on light backgrounds
+      const textColor = luminance > 0.5 ? '#000000' : '#ffffff';
+      overlayDisplay.style.color = textColor;
+
+      // Update corner border colors to match
+      const corners = overlayDisplay.querySelectorAll('.corner-tl, .corner-tr, .corner-bl, .corner-br');
+      corners.forEach(corner => {
+        corner.style.borderColor = textColor;
+      });
+    }
 
     // Save color preference to cookies
     if (typeof CookieManager !== 'undefined') {
@@ -283,7 +543,10 @@ function formatTime(ms) {
 function updateDisplay() {
   const formattedTime = formatTime(remaining);
   elements.display.textContent = formattedTime;
-  overlayDisplay.textContent = formattedTime;
+  // Update only the text node, not the entire span content
+  if (overlayTextNode) {
+    overlayTextNode.nodeValue = formattedTime;
+  }
 }
 
 /**
