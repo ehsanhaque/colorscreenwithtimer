@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Redact — Remove PII from Bank Statements</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+      <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+    </svg>
+    PDF Redact
+  </div>
+  <p class="tagline">Automatically remove PII from bank statements and financial documents</p>
+</header>
+
+<div class="card">
+
+  <!-- ── Upload ─────────────────────────────────────── -->
+  <section id="sectionUpload">
+    <div class="drop-zone" id="dropZone" role="button" tabindex="0" aria-label="Upload PDF file">
+      <div class="drop-icon">
+        <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5"/>
+        </svg>
+      </div>
+      <p>Drop your PDF here</p>
+      <p class="drop-hint">or <span class="link">click to browse</span></p>
+      <input type="file" id="fileInput" accept=".pdf,application/pdf" hidden />
+    </div>
+
+    <div class="file-preview hidden" id="filePreview">
+      <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>
+      </svg>
+      <span class="file-name" id="fileName"></span>
+      <button class="clear-btn" id="clearBtn" aria-label="Remove file">&times;</button>
+    </div>
+
+    <div class="pii-tags">
+      <span class="pii-label">Detects &amp; redacts</span>
+      <span class="tag">SSN</span>
+      <span class="tag">SIN</span>
+      <span class="tag">Credit Cards</span>
+      <span class="tag">Amex Cards</span>
+      <span class="tag">Account Numbers</span>
+      <span class="tag">Transit Numbers</span>
+      <span class="tag">Phone Numbers</span>
+      <span class="tag">Email Addresses</span>
+      <span class="tag">Street Addresses</span>
+      <span class="tag">Postal / ZIP Codes</span>
+      <span class="tag">Dates of Birth</span>
+      <span class="tag">Names (labeled)</span>
+    </div>
+
+    <button class="redact-btn" id="redactBtn" disabled>
+      Redact PDF
+    </button>
+  </section>
+
+  <!-- ── Processing ─────────────────────────────────── -->
+  <section id="sectionProcessing" class="hidden">
+    <div class="processing-wrap">
+      <div class="spinner"></div>
+      <p>Scanning and redacting PII&hellip;</p>
+    </div>
+  </section>
+
+  <!-- ── Results ────────────────────────────────────── -->
+  <section id="sectionResults" class="hidden">
+    <div class="result-header">
+      <div class="success-icon">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+        </svg>
+      </div>
+      <div>
+        <h2 id="totalCount">0 items redacted</h2>
+        <p id="resultSubtitle">Sensitive data has been permanently removed.</p>
+      </div>
+    </div>
+
+    <div class="findings-grid" id="findingsGrid"></div>
+
+    <div class="result-actions">
+      <a class="download-btn" id="downloadBtn" href="#" download>
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/>
+        </svg>
+        Download Redacted PDF
+      </a>
+      <button class="reset-btn" id="resetBtn">Redact Another</button>
+    </div>
+
+    <p class="disclaimer">
+      Review the redacted PDF before sharing. Unlabeled names, scanned PDFs, and non-standard
+      formats may not be detected. This tool does not store your files.
+    </p>
+  </section>
+
+  <!-- ── Error ──────────────────────────────────────── -->
+  <section id="sectionError" class="hidden">
+    <div class="error-wrap">
+      <div class="error-icon">
+        <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/>
+        </svg>
+      </div>
+      <p class="error-msg" id="errorMessage">An error occurred.</p>
+      <button class="retry-btn" id="retryBtn">Try Again</button>
+    </div>
+  </section>
+
+</div>
+
+<footer>Files are processed in memory and never stored on disk.</footer>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
