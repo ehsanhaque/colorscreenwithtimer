@@ -49,12 +49,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Kolorowy Ekran z Timerem",
-    "url": "https://colorscreenwithtimer.com/pl/",
-    "description": "Darmowy kolorowy ekran online z konfigurowalnym timerem odliczającym. Idealny do oświetlenia, fotografii, rozmów wideo i sesji skupienia.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Kolorowy Ekran z Timerem",
+        "url": "https://colorscreenwithtimer.com/pl/",
+        "description": "Darmowy kolorowy ekran online z konfigurowalnym timerem odliczającym. Idealny do oświetlenia, fotografii, rozmów wideo i sesji skupienia.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Pełnoekranowy kolorowy ekran w bieli, czerni, czerwieni, zieleni, błękicie, żółci, pomarańczu, różu i fiolecie",
+          "Własny próbnik kolorów dla dowolnego odcienia szesnastkowego",
+          "Wbudowany minutnik odliczający z wybieranymi dźwiękami alarmu",
+          "Regulowana pozycja minutnika w trybie pełnoekranowym",
+          "Skróty klawiszowe do startu, resetu i pełnego ekranu",
+          "Działa offline, bez rejestracji i instalacji"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czy Kolorowy Ekran z Minutnikiem jest darmowy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Narzędzie jest całkowicie darmowe, bez rejestracji i instalacji. Działa w każdej nowoczesnej przeglądarce na komputerze, laptopie, tablecie i telefonie oraz działa offline po załadowaniu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak używać kolorowego ekranu jako oświetlenia do Zoom lub rozmów wideo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Otwórz narzędzie na drugim ekranie, telefonie lub tablecie, wybierz ciepłą biel lub ustawienie Zoom i przejdź na pełny ekran. Skieruj świecący ekran na twarz, aby uzyskać miękkie, równomierne światło wypełniające."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak sprawdzić monitor pod kątem martwych pikseli lub backlight bleed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Przejdź na pełny ekran i przełączaj biel, czerń, czerwień, zieleń i błękit. Martwy lub zablokowany piksel pozostaje w złym kolorze, a przeciek podświetlenia widać jako jaśniejsze plamy przy krawędziach czarnego ekranu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy minutnik działa na pełnym ekranie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Ustaw godziny, minuty i sekundy, wybierz dźwięk alarmu i zachowaj widoczny minutnik na pełnym ekranie. Możesz wybrać, gdzie się pojawia, lub całkowicie go ukryć."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jakie są skróty klawiszowe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Naciśnij Spację, aby uruchomić lub wstrzymać minutnik, R, aby go zresetować, i F, aby przełączyć pełny ekran."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
   <link rel="stylesheet" href="/src/global.css?v=30">
@@ -290,6 +371,91 @@
         </section>
       </div>
     </main>
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Darmowy kolorowy ekran pełnoekranowy z minutnikiem</h2>
+    <p><strong>Kolorowy Ekran z Minutnikiem</strong> zamienia Twój ekran w czysty, pełnoekranowy blok jednolitego koloru z wbudowanym, opcjonalnym minutnikiem odliczającym. Wybierz gotowy kolor, taki jak <strong>biały ekran</strong>, <strong>czarny ekran</strong>, <strong>czerwony ekran</strong>, <strong>zielony ekran</strong> lub <strong>niebieski ekran</strong>, albo użyj próbnika, aby ustawić dowolny odcień, a następnie przejdź na pełny ekran. Wszystko działa w przeglądarce: bez pobierania, bez rejestracji i działa offline.</p>
+
+    <h2>Jak korzystać z kolorowego ekranu i minutnika</h2>
+    <h3>1. Wybierz kolor</h3>
+    <p>Kliknij przycisk gotowego koloru lub otwórz próbnik kolorów, aby ustawić dowolną wartość szesnastkową.</p>
+    <h3>2. Włącz pełny ekran</h3>
+    <p>Naciśnij przycisk <strong>Pełny ekran</strong> lub klawisz <kbd>F</kbd>, aby wypełnić kolorem cały ekran.</p>
+    <h3>3. Ustaw opcjonalny minutnik</h3>
+    <p>Wprowadź godziny, minuty i sekundy, wybierz dźwięk alarmu i uruchom minutnik <kbd>spacją</kbd>. Minutnik może pozostać widoczny na pełnym ekranie, a Ty wybierasz, gdzie się pojawia.</p>
+
+    <h2>Popularne zastosowania pełnoekranowego kolorowego ekranu</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Oświetlenie do rozmów wideo i Zoom</h3>
+        <p>Użyj ciepłej bieli lub ustawienia Zoom na drugim ekranie albo telefonie jako miękkiego światła wypełniającego, które rozjaśnia twarz na Zoom, Teams i Google Meet.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Światło wypełniające do zdjęć i wideo</h3>
+        <p>Zamień tablet lub monitor w regulowane kolorowe źródło światła do portretów, zdjęć produktowych i kreatywnych efektów kolorystycznych.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Test martwych pikseli i backlight bleed</h3>
+        <p>Przełączaj biel, czerń, czerwień, zieleń i błękit na pełnym ekranie, aby wykryć martwe lub zablokowane piksele i sprawdzić przeciek podświetlenia monitora.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Oświetlenie nastrojowe</h3>
+        <p>Wypełnij pokój kojącym kolorem, stwórz relaksującą scenę lub użyj jasnego białego ekranu jako prowizorycznego panelu świetlnego.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Sesje skupienia i Pomodoro</h3>
+        <p>Połącz jednolite tło z minutnikiem, aby prowadzić bloki skupienia Pomodoro, sesje nauki, treningi lub krótkie przerwy.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Prezentacje i wydarzenia</h3>
+        <p>Wyświetl czyste kolorowe tło z widocznym odliczaniem podczas prelekcji, warsztatów, zajęć i mierzenia czasu na scenie.</p>
+      </div>
+    </div>
+
+    <h2>Najczęściej zadawane pytania</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>Czy Kolorowy Ekran z Minutnikiem jest darmowy?</summary>
+        <p>Tak. Narzędzie jest całkowicie darmowe, bez rejestracji i instalacji. Działa w każdej nowoczesnej przeglądarce na komputerze, laptopie, tablecie i telefonie oraz działa offline po załadowaniu.</p>
+      </details>
+      <details>
+        <summary>Jak używać kolorowego ekranu jako oświetlenia do Zoom lub rozmów wideo?</summary>
+        <p>Otwórz narzędzie na drugim ekranie, telefonie lub tablecie, wybierz ciepłą biel lub ustawienie Zoom i przejdź na pełny ekran. Skieruj świecący ekran na twarz, aby uzyskać miękkie, równomierne światło wypełniające.</p>
+      </details>
+      <details>
+        <summary>Jak sprawdzić monitor pod kątem martwych pikseli lub backlight bleed?</summary>
+        <p>Przejdź na pełny ekran i przełączaj biel, czerń, czerwień, zieleń i błękit. Martwy lub zablokowany piksel pozostaje w złym kolorze, a przeciek podświetlenia widać jako jaśniejsze plamy przy krawędziach czarnego ekranu.</p>
+      </details>
+      <details>
+        <summary>Czy minutnik działa na pełnym ekranie?</summary>
+        <p>Tak. Ustaw godziny, minuty i sekundy, wybierz dźwięk alarmu i zachowaj widoczny minutnik na pełnym ekranie. Możesz wybrać, gdzie się pojawia, lub całkowicie go ukryć.</p>
+      </details>
+      <details>
+        <summary>Jakie są skróty klawiszowe?</summary>
+        <p>Naciśnij <kbd>Spację</kbd>, aby uruchomić lub wstrzymać minutnik, <kbd>R</kbd>, aby go zresetować, i <kbd>F</kbd>, aby przełączyć pełny ekran.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">Chcesz wiedzieć więcej? Przeczytaj <a href="/about.html">o narzędziu</a>, zobacz pełne <a href="/faq.html">FAQ</a> lub <a href="/contact.html">skontaktuj się z nami</a>, przesyłając opinie i sugestie.</p>
+  </section>
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">
     <div class="eyebrow">colorscreenwithtimer.com</div>
     <p style="margin-bottom: 0.5rem;">

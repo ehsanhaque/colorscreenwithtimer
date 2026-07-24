@@ -61,12 +61,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Écran de Couleur avec Minuteur",
-    "url": "https://colorscreenwithtimer.com/fr/",
-    "description": "Écran de couleur en ligne gratuit avec minuteur personnalisable. Parfait pour l'éclairage, la photographie, les appels vidéo et les sessions de concentration.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": null,
+        "url": null,
+        "description": null,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Écran de couleur plein écran en blanc, noir, rouge, vert, bleu, jaune, orange, rose et violet",
+          "Sélecteur de couleur personnalisé pour toute teinte hexadécimale",
+          "Minuteur de compte à rebours intégré avec sons d'alerte au choix",
+          "Position du minuteur réglable en mode plein écran",
+          "Raccourcis clavier pour démarrer, réinitialiser et plein écran",
+          "Fonctionne hors ligne, sans inscription ni installation"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Écran de Couleur avec Minuteur est-il gratuit ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. L'outil est entièrement gratuit, sans inscription ni installation. Il fonctionne dans tout navigateur moderne sur ordinateur, portable, tablette et mobile, et fonctionne hors ligne une fois chargé."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment utiliser un écran de couleur comme éclairage pour Zoom ou les appels vidéo ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ouvrez l'outil sur un second écran, un téléphone ou une tablette, choisissez un blanc chaud ou le préréglage Zoom et passez en plein écran. Orientez l'écran lumineux vers votre visage pour obtenir une lumière d'appoint douce et uniforme."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment tester mon moniteur pour les pixels morts ou le backlight bleed ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Passez en plein écran et faites défiler le blanc, le noir, le rouge, le vert et le bleu. Un pixel mort ou bloqué reste de la mauvaise couleur, tandis que le backlight bleed apparaît sous forme de taches plus claires près des bords sur un écran noir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le minuteur fonctionne-t-il en plein écran ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Réglez les heures, minutes et secondes, choisissez un son d'alerte et gardez le minuteur visible en plein écran. Vous pouvez choisir où il s'affiche ou le masquer complètement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quels sont les raccourcis clavier ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Appuyez sur Espace pour démarrer ou mettre en pause le minuteur, R pour le réinitialiser et F pour activer le plein écran."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -511,6 +592,92 @@
 </div>
 
   </div>
+
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Écran de couleur plein écran gratuit avec minuteur</h2>
+    <p><strong>Écran de Couleur avec Minuteur</strong> transforme votre écran en un aplat de couleur unie plein écran, avec un compte à rebours optionnel intégré. Choisissez un préréglage comme un <strong>écran blanc</strong>, un <strong>écran noir</strong>, un <strong>écran rouge</strong>, un <strong>écran vert</strong> ou un <strong>écran bleu</strong>, ou utilisez le sélecteur pour définir n'importe quelle teinte précise, puis passez en plein écran. Tout fonctionne dans le navigateur : aucun téléchargement, aucune inscription, et cela fonctionne hors ligne.</p>
+
+    <h2>Comment utiliser l'écran de couleur et le minuteur</h2>
+    <h3>1. Choisissez une couleur</h3>
+    <p>Cliquez sur un bouton de couleur prédéfini ou ouvrez le sélecteur de couleur pour saisir n'importe quelle valeur hexadécimale.</p>
+    <h3>2. Passez en plein écran</h3>
+    <p>Appuyez sur le bouton <strong>Plein écran</strong> ou sur la touche <kbd>F</kbd> pour remplir tout l'écran avec la couleur.</p>
+    <h3>3. Réglez un minuteur optionnel</h3>
+    <p>Saisissez les heures, minutes et secondes, choisissez un son d'alerte et lancez le minuteur avec la <kbd>barre d'espace</kbd>. Le minuteur peut rester visible en plein écran, et vous choisissez où il s'affiche.</p>
+
+    <h2>Utilisations populaires d'un écran de couleur plein écran</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Éclairage pour appels vidéo et Zoom</h3>
+        <p>Utilisez un blanc chaud ou le préréglage Zoom sur un second écran ou un téléphone comme lumière d'appoint douce qui éclaire votre visage sur Zoom, Teams et Google Meet.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Lumière d'appoint photo et vidéo</h3>
+        <p>Transformez une tablette ou un moniteur en source de lumière colorée réglable pour les portraits, les photos de produits et les effets de couleur créatifs.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Test de pixels morts et de backlight bleed</h3>
+        <p>Faites défiler le blanc, le noir, le rouge, le vert et le bleu en plein écran pour repérer les pixels morts ou bloqués et vérifier les fuites de lumière du moniteur.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Éclairage d'ambiance</h3>
+        <p>Baignez une pièce d'une couleur apaisante, créez une scène relaxante ou utilisez un écran blanc lumineux comme panneau lumineux improvisé.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Sessions de concentration et Pomodoro</h3>
+        <p>Associez un fond uni au minuteur pour des blocs de concentration Pomodoro, des révisions, des séances de sport ou de courtes pauses.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Présentations et événements</h3>
+        <p>Affichez un fond de couleur épuré avec un compte à rebours visible pour les conférences, ateliers, activités en classe et le minutage sur scène.</p>
+      </div>
+    </div>
+
+    <h2>Questions fréquentes</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>Écran de Couleur avec Minuteur est-il gratuit ?</summary>
+        <p>Oui. L'outil est entièrement gratuit, sans inscription ni installation. Il fonctionne dans tout navigateur moderne sur ordinateur, portable, tablette et mobile, et fonctionne hors ligne une fois chargé.</p>
+      </details>
+      <details>
+        <summary>Comment utiliser un écran de couleur comme éclairage pour Zoom ou les appels vidéo ?</summary>
+        <p>Ouvrez l'outil sur un second écran, un téléphone ou une tablette, choisissez un blanc chaud ou le préréglage Zoom et passez en plein écran. Orientez l'écran lumineux vers votre visage pour obtenir une lumière d'appoint douce et uniforme.</p>
+      </details>
+      <details>
+        <summary>Comment tester mon moniteur pour les pixels morts ou le backlight bleed ?</summary>
+        <p>Passez en plein écran et faites défiler le blanc, le noir, le rouge, le vert et le bleu. Un pixel mort ou bloqué reste de la mauvaise couleur, tandis que le backlight bleed apparaît sous forme de taches plus claires près des bords sur un écran noir.</p>
+      </details>
+      <details>
+        <summary>Le minuteur fonctionne-t-il en plein écran ?</summary>
+        <p>Oui. Réglez les heures, minutes et secondes, choisissez un son d'alerte et gardez le minuteur visible en plein écran. Vous pouvez choisir où il s'affiche ou le masquer complètement.</p>
+      </details>
+      <details>
+        <summary>Quels sont les raccourcis clavier ?</summary>
+        <p>Appuyez sur <kbd>Espace</kbd> pour démarrer ou mettre en pause le minuteur, <kbd>R</kbd> pour le réinitialiser et <kbd>F</kbd> pour activer le plein écran.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">Envie d'en savoir plus ? Lisez <a href="/about.html">à propos de l'outil</a>, consultez la <a href="/faq.html">FAQ</a> complète ou <a href="/contact.html">contactez-nous</a> pour vos retours et suggestions.</p>
+  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">

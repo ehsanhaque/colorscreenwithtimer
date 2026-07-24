@@ -61,12 +61,87 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Color Screen with Timer",
-    "url": "https://colorscreenwithtimer.com/",
-    "description": "Free online fullscreen color screen with customizable countdown timer. Perfect for lighting, photography, video calls, and focus sessions.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Color Screen with Timer",
+        "url": "https://colorscreenwithtimer.com/",
+        "description": "Free online fullscreen color screen with a customizable countdown timer. Choose solid preset colors or pick any custom shade for lighting, photography, video calls, screen testing, and focus sessions.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": ["en", "de", "es", "fr", "it", "ja", "ko", "ms", "pl", "pt", "sv", "tr", "uk"],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Fullscreen solid color screen in white, black, red, green, blue, yellow, orange, pink and purple",
+          "Custom color picker for any hex shade",
+          "Built-in countdown timer with selectable alert sounds",
+          "Adjustable timer overlay position in fullscreen mode",
+          "Keyboard shortcuts for start, reset and fullscreen",
+          "Works offline with no registration or install"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Color Screen with Timer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Color Screen with Timer is a free online tool that fills your screen with a solid color of your choice and includes an optional countdown timer. You can pick from preset colors such as white, black, red, green and blue, or choose any custom shade, then go fullscreen for lighting, photography, screen testing or focus sessions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the color screen tool free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Color Screen with Timer is completely free, requires no registration or installation, and runs in any modern web browser on desktop, laptop, tablet and mobile."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What can I use a fullscreen color screen for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common uses include soft key lighting for video calls and photography, filling a room with ambient or mood light, testing a monitor for dead pixels and backlight bleed, providing a plain background for product photos, and creating a distraction-free focus screen paired with the countdown timer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I use a color screen for Zoom or video call lighting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Open the tool on a second screen, phone or tablet, select a warm white or the Zoom preset, and go fullscreen. Position the device so the glowing screen faces you to act as a soft, even fill light that brightens your face on Zoom, Teams, Google Meet and other video calls."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I test my monitor for dead pixels or backlight bleed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Switch the screen to full color and enter fullscreen. Cycle through white, black, red, green and blue. A dead or stuck pixel shows up as a spot that stays the wrong color, while backlight bleed appears as light patches near the edges on a solid black screen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the countdown timer work in fullscreen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You can set hours, minutes and seconds, choose an alert sound, and keep the timer visible while the color screen is in fullscreen. You can also choose where the timer overlay appears or hide it entirely."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -511,6 +586,106 @@
 </div>
 
   </div>
+
+  <!-- ==================== SEO CONTENT SECTION ==================== -->
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Free Fullscreen Color Screen with a Countdown Timer</h2>
+    <p>
+      <strong>Color Screen with Timer</strong> turns your display into a clean, fullscreen block of solid color with an
+      optional countdown timer built in. Choose a preset such as a
+      <strong>white screen</strong>, <strong>black screen</strong>, <strong>red screen</strong>,
+      <strong>green screen</strong> or <strong>blue screen</strong>, or use the custom color picker to set any exact shade,
+      then go fullscreen for a distraction-free, edge-to-edge color display. It runs entirely in your browser &mdash;
+      no downloads, no sign-up, and it works offline.
+    </p>
+
+    <h2>How to Use the Color Screen and Timer</h2>
+    <h3>1. Pick a color</h3>
+    <p>Click a preset color button or open the custom color picker to dial in any hex color you need.</p>
+    <h3>2. Go fullscreen</h3>
+    <p>Press the <strong>Fullscreen</strong> button or tap the <kbd>F</kbd> key to fill your entire screen with the color.</p>
+    <h3>3. Set an optional countdown timer</h3>
+    <p>
+      Enter hours, minutes and seconds, choose an alert sound, and start the timer with the <kbd>Space</kbd> key.
+      You can keep the timer visible in fullscreen and choose exactly where it appears on screen.
+    </p>
+
+    <h2>Popular Ways to Use a Fullscreen Color Screen</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Video call &amp; Zoom lighting</h3>
+        <p>Use a warm white or the Zoom preset on a second screen or phone as a soft fill light that brightens your face on Zoom, Teams and Google Meet.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Photography &amp; video fill light</h3>
+        <p>Turn a tablet or monitor into an adjustable colored light source for portraits, product shots and creative color effects.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Dead pixel &amp; backlight bleed test</h3>
+        <p>Cycle through solid white, black, red, green and blue in fullscreen to spot dead or stuck pixels and check a monitor for backlight bleed. See the full <a href="dead-pixel-test.html">dead pixel test guide</a>.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Mood &amp; ambient lighting</h3>
+        <p>Fill a room with calming color, set a relaxing scene, or use a bright white screen as an impromptu light panel or lightbox.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Focus &amp; Pomodoro sessions</h3>
+        <p>Pair a solid background with the countdown timer to run Pomodoro focus blocks, study sprints, workouts or short breaks.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Presentations &amp; events</h3>
+        <p>Show a clean color backdrop with a visible countdown for talks, workshops, classroom activities and stage timing.</p>
+      </div>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>Is Color Screen with Timer free?</summary>
+        <p>Yes. It is completely free with no registration or installation. It runs in any modern browser on desktop, laptop, tablet and mobile, and works offline once loaded.</p>
+      </details>
+      <details>
+        <summary>How do I use a color screen for Zoom or video call lighting?</summary>
+        <p>Open the tool on a second screen, phone or tablet, select a warm white or the Zoom preset, and go fullscreen. Point the glowing screen toward your face to act as a soft, even fill light on video calls.</p>
+      </details>
+      <details>
+        <summary>How do I test my monitor for dead pixels or backlight bleed?</summary>
+        <p>Enter fullscreen and cycle through white, black, red, green and blue. A dead or stuck pixel appears as a spot that stays the wrong color, while backlight bleed shows up as lighter patches near the edges on a solid black screen.</p>
+      </details>
+      <details>
+        <summary>Does the countdown timer work in fullscreen?</summary>
+        <p>Yes. Set hours, minutes and seconds, pick an alert sound, and keep the timer visible in fullscreen. You can choose where the timer overlay appears or hide it entirely.</p>
+      </details>
+      <details>
+        <summary>Which keyboard shortcuts are available?</summary>
+        <p>Press <kbd>Space</kbd> to start or pause the timer, <kbd>R</kbd> to reset it, and <kbd>F</kbd> to toggle fullscreen.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">
+      Want to know more? Read <a href="about.html">about the tool</a>, browse the full
+      <a href="faq.html">FAQ</a>, or <a href="contact.html">get in touch</a> with feedback and feature requests.
+    </p>
+  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">

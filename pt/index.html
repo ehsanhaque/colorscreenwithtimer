@@ -61,12 +61,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Ecrã de Cor com Temporizador",
-    "url": "https://colorscreenwithtimer.com/pt/",
-    "description": "Ecrã de cor em ecrã inteiro gratuito online com temporizador de contagem decrescente personalizável. Perfeito para iluminação, fotografia, videochamadas e sessões de concentração.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": null,
+        "url": null,
+        "description": null,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Tela colorida em tela cheia em branco, preto, vermelho, verde, azul, amarelo, laranja, rosa e roxo",
+          "Seletor de cor personalizado para qualquer tom hexadecimal",
+          "Temporizador de contagem regressiva integrado com sons de alerta selecionáveis",
+          "Posição do temporizador ajustável em modo de tela cheia",
+          "Atalhos de teclado para iniciar, reiniciar e tela cheia",
+          "Funciona offline, sem registo nem instalação"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Tela Colorida com Temporizador é grátis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. É totalmente grátis, sem registo nem instalação. Funciona em qualquer navegador moderno em computador, portátil, tablet e telemóvel e funciona offline depois de carregado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como uso uma tela colorida como luz para Zoom ou videochamadas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Abra a ferramenta num segundo ecrã, telemóvel ou tablet, escolha um branco quente ou a predefinição Zoom e ative a tela cheia. Aponte o ecrã iluminado para o seu rosto para obter uma luz de preenchimento suave e uniforme."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como testo o meu monitor para pixels mortos ou backlight bleed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ative a tela cheia e percorra branco, preto, vermelho, verde e azul. Um pixel morto ou preso mantém a cor errada, enquanto o backlight bleed aparece como manchas mais claras junto às bordas num ecrã preto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O temporizador funciona em tela cheia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Defina horas, minutos e segundos, escolha um som de alerta e mantenha o temporizador visível em tela cheia. Pode escolher onde aparece ou ocultá-lo por completo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Que atalhos de teclado existem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pressione Espaço para iniciar ou pausar o temporizador, R para o reiniciar e F para alternar a tela cheia."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -511,6 +592,92 @@
 </div>
 
   </div>
+
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Tela colorida em tela cheia grátis com temporizador</h2>
+    <p><strong>Tela Colorida com Temporizador</strong> transforma o seu ecrã num bloco limpo de cor sólida em tela cheia, com um temporizador de contagem regressiva opcional integrado. Escolha uma predefinição como <strong>tela branca</strong>, <strong>tela preta</strong>, <strong>tela vermelha</strong>, <strong>tela verde</strong> ou <strong>tela azul</strong>, ou use o seletor de cor para definir qualquer tom exato e ative a tela cheia. Tudo funciona no navegador: sem downloads, sem registo e funciona offline.</p>
+
+    <h2>Como usar a tela colorida e o temporizador</h2>
+    <h3>1. Escolha uma cor</h3>
+    <p>Clique num botão de cor predefinido ou abra o seletor de cor para definir qualquer valor hexadecimal.</p>
+    <h3>2. Ative a tela cheia</h3>
+    <p>Pressione o botão <strong>Tela cheia</strong> ou a tecla <kbd>F</kbd> para preencher todo o ecrã com a cor.</p>
+    <h3>3. Defina um temporizador opcional</h3>
+    <p>Introduza horas, minutos e segundos, escolha um som de alerta e inicie o temporizador com a <kbd>barra de espaço</kbd>. Pode manter o temporizador visível em tela cheia e escolher onde aparece.</p>
+
+    <h2>Usos populares de uma tela colorida em tela cheia</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Iluminação para videochamadas e Zoom</h3>
+        <p>Use um branco quente ou a predefinição Zoom num segundo ecrã ou telemóvel como luz de preenchimento suave que ilumina o seu rosto no Zoom, Teams e Google Meet.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Luz de preenchimento para foto e vídeo</h3>
+        <p>Transforme um tablet ou monitor numa fonte de luz colorida ajustável para retratos, fotos de produto e efeitos de cor criativos.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Teste de pixels mortos e backlight bleed</h3>
+        <p>Percorra branco, preto, vermelho, verde e azul em tela cheia para detetar pixels mortos ou presos e verificar fugas de luz do monitor.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Iluminação ambiente</h3>
+        <p>Encha uma sala com uma cor relaxante, crie uma cena tranquila ou use uma tela branca brilhante como painel de luz improvisado.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Sessões de foco e Pomodoro</h3>
+        <p>Combine um fundo sólido com o temporizador para blocos de foco Pomodoro, sessões de estudo, treinos ou pausas curtas.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Apresentações e eventos</h3>
+        <p>Mostre um fundo de cor limpo com contagem regressiva visível para palestras, workshops, atividades em sala e controlo de tempo no palco.</p>
+      </div>
+    </div>
+
+    <h2>Perguntas frequentes</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>Tela Colorida com Temporizador é grátis?</summary>
+        <p>Sim. É totalmente grátis, sem registo nem instalação. Funciona em qualquer navegador moderno em computador, portátil, tablet e telemóvel e funciona offline depois de carregado.</p>
+      </details>
+      <details>
+        <summary>Como uso uma tela colorida como luz para Zoom ou videochamadas?</summary>
+        <p>Abra a ferramenta num segundo ecrã, telemóvel ou tablet, escolha um branco quente ou a predefinição Zoom e ative a tela cheia. Aponte o ecrã iluminado para o seu rosto para obter uma luz de preenchimento suave e uniforme.</p>
+      </details>
+      <details>
+        <summary>Como testo o meu monitor para pixels mortos ou backlight bleed?</summary>
+        <p>Ative a tela cheia e percorra branco, preto, vermelho, verde e azul. Um pixel morto ou preso mantém a cor errada, enquanto o backlight bleed aparece como manchas mais claras junto às bordas num ecrã preto.</p>
+      </details>
+      <details>
+        <summary>O temporizador funciona em tela cheia?</summary>
+        <p>Sim. Defina horas, minutos e segundos, escolha um som de alerta e mantenha o temporizador visível em tela cheia. Pode escolher onde aparece ou ocultá-lo por completo.</p>
+      </details>
+      <details>
+        <summary>Que atalhos de teclado existem?</summary>
+        <p>Pressione <kbd>Espaço</kbd> para iniciar ou pausar o temporizador, <kbd>R</kbd> para o reiniciar e <kbd>F</kbd> para alternar a tela cheia.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">Quer saber mais? Leia <a href="/about.html">sobre a ferramenta</a>, consulte as <a href="/faq.html">perguntas frequentes</a> ou <a href="/contact.html">entre em contacto</a> com comentários e sugestões.</p>
+  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">
