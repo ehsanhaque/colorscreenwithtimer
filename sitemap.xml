@@ -5,7 +5,7 @@
   <!-- Main English Pages -->
   <url>
     <loc>https://colorscreenwithtimer.com/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -76,7 +76,7 @@
   <!-- Locale Pages (German) -->
   <url>
     <loc>https://colorscreenwithtimer.com/de/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -98,7 +98,7 @@
   <!-- Locale Pages (French) -->
   <url>
     <loc>https://colorscreenwithtimer.com/fr/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -120,7 +120,7 @@
   <!-- Locale Pages (Spanish) -->
   <url>
     <loc>https://colorscreenwithtimer.com/es/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -142,7 +142,7 @@
   <!-- Locale Pages (Ukrainian) -->
   <url>
     <loc>https://colorscreenwithtimer.com/uk/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -164,7 +164,7 @@
   <!-- Locale Pages (Polish) -->
   <url>
     <loc>https://colorscreenwithtimer.com/pl/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -186,7 +186,7 @@
   <!-- Locale Pages (Italian) -->
   <url>
     <loc>https://colorscreenwithtimer.com/it/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -208,7 +208,7 @@
   <!-- Locale Pages (Turkish) -->
   <url>
     <loc>https://colorscreenwithtimer.com/tr/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -230,7 +230,7 @@
   <!-- Locale Pages (Portuguese) -->
   <url>
     <loc>https://colorscreenwithtimer.com/pt/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -252,7 +252,7 @@
   <!-- Locale Pages (Swedish) -->
   <url>
     <loc>https://colorscreenwithtimer.com/sv/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -274,7 +274,7 @@
   <!-- Locale Pages (Japanese) -->
   <url>
     <loc>https://colorscreenwithtimer.com/ja/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -296,7 +296,7 @@
   <!-- Locale Pages (Malay) -->
   <url>
     <loc>https://colorscreenwithtimer.com/ms/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -318,7 +318,7 @@
   <!-- Locale Pages (Korean) -->
   <url>
     <loc>https://colorscreenwithtimer.com/ko/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://colorscreenwithtimer.com/"/>
@@ -335,6 +335,15 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://colorscreenwithtimer.com/ja/"/>
     <xhtml:link rel="alternate" hreflang="ms" href="https://colorscreenwithtimer.com/ms/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://colorscreenwithtimer.com/ko/"/>
+  </url>
+
+
+  <!-- Use-case Landing Pages -->
+  <url>
+    <loc>https://colorscreenwithtimer.com/dead-pixel-test.html</loc>
+    <lastmod>2026-07-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

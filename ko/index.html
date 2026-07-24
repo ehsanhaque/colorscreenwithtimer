@@ -61,12 +61,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "타이머가 있는 컬러 스크린",
-    "url": "https://colorscreenwithtimer.com/ko/",
-    "description": "무료 온라인 전체 화면 컬러 스크린과 맞춤형 카운트다운 타이머. 조명, 사진 촬영, 화상 통화 및 집중 세션에 완벽합니다.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": null,
+        "url": null,
+        "description": null,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "흰색, 검정, 빨강, 초록, 파랑, 노랑, 주황, 분홍, 보라의 전체 화면 색상 화면",
+          "모든 16진수 색조를 위한 사용자 지정 색상 선택기",
+          "선택 가능한 알림음이 있는 내장 카운트다운 타이머",
+          "전체 화면 모드에서 조절 가능한 타이머 위치",
+          "시작, 초기화, 전체 화면 키보드 단축키",
+          "가입이나 설치 없이 오프라인으로 동작"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "타이머가 있는 색상 화면은 무료인가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네. 가입이나 설치 없이 완전히 무료입니다. 데스크톱, 노트북, 태블릿, 휴대폰의 모든 최신 브라우저에서 동작하며 한 번 로드하면 오프라인에서도 사용할 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Zoom이나 화상 통화 조명으로 색상 화면을 어떻게 사용하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "보조 화면, 휴대폰 또는 태블릿에서 도구를 열고 따뜻한 흰색이나 Zoom 프리셋을 선택한 뒤 전체 화면으로 전환하세요. 빛나는 화면을 얼굴 쪽으로 향하게 하면 부드럽고 균일한 채움광이 됩니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "모니터의 불량 화소나 백라이트 블리드는 어떻게 검사하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "전체 화면으로 전환한 뒤 흰색, 검정, 빨강, 초록, 파랑을 번갈아 표시하세요. 불량 화소나 고정 화소는 잘못된 색으로 남고, 백라이트 블리드는 검은 화면 가장자리에 밝은 얼룩으로 나타납니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "카운트다운 타이머가 전체 화면에서도 작동하나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네. 시·분·초를 설정하고 알림음을 선택한 뒤 전체 화면에서도 타이머를 표시할 수 있습니다. 표시 위치를 선택하거나 완전히 숨길 수 있습니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "어떤 키보드 단축키가 있나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "스페이스로 타이머 시작·일시정지, R로 초기화, F로 전체 화면을 전환합니다."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -511,6 +592,92 @@
 </div>
 
   </div>
+
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">무료 전체 화면 색상 화면 및 타이머</h2>
+    <p><strong>타이머가 있는 색상 화면</strong>은 화면 전체를 단색으로 깔끔하게 채우고 선택적 카운트다운 타이머를 내장한 도구입니다. <strong>흰색 화면</strong>, <strong>검은색 화면</strong>, <strong>빨간색 화면</strong>, <strong>녹색 화면</strong>, <strong>파란색 화면</strong> 같은 프리셋을 고르거나 색상 선택기로 원하는 색을 설정한 뒤 전체 화면으로 전환하세요. 모든 기능이 브라우저에서 동작하며 다운로드와 가입이 필요 없고 오프라인에서도 사용할 수 있습니다.</p>
+
+    <h2>색상 화면과 타이머 사용법</h2>
+    <h3>1. 색상 선택</h3>
+    <p>프리셋 색상 버튼을 클릭하거나 색상 선택기를 열어 원하는 16진수 색상을 설정하세요.</p>
+    <h3>2. 전체 화면 전환</h3>
+    <p><strong>전체 화면</strong> 버튼을 누르거나 <kbd>F</kbd> 키를 눌러 화면 전체를 색으로 채웁니다.</p>
+    <h3>3. 선택적 타이머 설정</h3>
+    <p>시·분·초를 입력하고 알림음을 선택한 뒤 <kbd>스페이스</kbd> 키로 타이머를 시작하세요. 전체 화면에서도 타이머를 표시할 수 있고 표시 위치도 선택할 수 있습니다.</p>
+
+    <h2>전체 화면 색상 화면의 인기 활용법</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>화상 통화 및 Zoom 조명</h3>
+        <p>보조 화면이나 휴대폰에서 따뜻한 흰색 또는 Zoom 프리셋을 사용해 Zoom, Teams, Google Meet에서 얼굴을 밝혀 주는 부드러운 채움광으로 활용하세요.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>사진·영상 채움광</h3>
+        <p>태블릿이나 모니터를 인물, 제품 촬영, 창의적인 색상 효과를 위한 조절 가능한 컬러 광원으로 바꿔 보세요.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>불량 화소·백라이트 블리드 검사</h3>
+        <p>전체 화면에서 흰색, 검정, 빨강, 초록, 파랑을 번갈아 표시해 불량 화소나 고정 화소를 찾고 모니터의 빛샘을 확인하세요.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>분위기·앰비언트 조명</h3>
+        <p>방을 차분한 색으로 채우거나 편안한 장면을 연출하고, 밝은 흰색 화면을 즉석 조명 패널로 사용하세요.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>집중·뽀모도로 세션</h3>
+        <p>단색 배경과 카운트다운 타이머를 결합해 뽀모도로 집중, 공부, 운동, 짧은 휴식에 활용하세요.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>발표·행사</h3>
+        <p>강연, 워크숍, 수업, 무대 타이밍을 위해 잘 보이는 카운트다운과 함께 깔끔한 색 배경을 표시하세요.</p>
+      </div>
+    </div>
+
+    <h2>자주 묻는 질문</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>타이머가 있는 색상 화면은 무료인가요?</summary>
+        <p>네. 가입이나 설치 없이 완전히 무료입니다. 데스크톱, 노트북, 태블릿, 휴대폰의 모든 최신 브라우저에서 동작하며 한 번 로드하면 오프라인에서도 사용할 수 있습니다.</p>
+      </details>
+      <details>
+        <summary>Zoom이나 화상 통화 조명으로 색상 화면을 어떻게 사용하나요?</summary>
+        <p>보조 화면, 휴대폰 또는 태블릿에서 도구를 열고 따뜻한 흰색이나 Zoom 프리셋을 선택한 뒤 전체 화면으로 전환하세요. 빛나는 화면을 얼굴 쪽으로 향하게 하면 부드럽고 균일한 채움광이 됩니다.</p>
+      </details>
+      <details>
+        <summary>모니터의 불량 화소나 백라이트 블리드는 어떻게 검사하나요?</summary>
+        <p>전체 화면으로 전환한 뒤 흰색, 검정, 빨강, 초록, 파랑을 번갈아 표시하세요. 불량 화소나 고정 화소는 잘못된 색으로 남고, 백라이트 블리드는 검은 화면 가장자리에 밝은 얼룩으로 나타납니다.</p>
+      </details>
+      <details>
+        <summary>카운트다운 타이머가 전체 화면에서도 작동하나요?</summary>
+        <p>네. 시·분·초를 설정하고 알림음을 선택한 뒤 전체 화면에서도 타이머를 표시할 수 있습니다. 표시 위치를 선택하거나 완전히 숨길 수 있습니다.</p>
+      </details>
+      <details>
+        <summary>어떤 키보드 단축키가 있나요?</summary>
+        <p><kbd>스페이스</kbd>로 타이머 시작·일시정지, <kbd>R</kbd>로 초기화, <kbd>F</kbd>로 전체 화면을 전환합니다.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">더 알고 싶으신가요? <a href="/about.html">도구 소개</a>를 읽고 전체 <a href="/faq.html">FAQ</a>를 확인하거나 의견과 제안을 <a href="/contact.html">문의하기</a>로 보내 주세요.</p>
+  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">

@@ -61,12 +61,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Zamanlayıcılı Renkli Ekran",
-    "url": "https://colorscreenwithtimer.com/tr/",
-    "description": "Özelleştirilebilir geri sayım sayacı ile ücretsiz çevrimiçi tam ekran renkli ekran. Aydınlatma, fotoğrafçılık, video görüşmeleri ve odaklanma seansları için mükemmel.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Herhangi"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": null,
+        "url": null,
+        "description": null,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Beyaz, siyah, kırmızı, yeşil, mavi, sarı, turuncu, pembe ve mor tam ekran renkli ekran",
+          "Herhangi bir onaltılık ton için özel renk seçici",
+          "Seçilebilir uyarı sesli yerleşik geri sayım zamanlayıcısı",
+          "Tam ekran modunda ayarlanabilir zamanlayıcı konumu",
+          "Başlat, sıfırla ve tam ekran için klavye kısayolları",
+          "Kayıt veya kurulum olmadan çevrimdışı çalışır"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Zamanlayıcılı Renkli Ekran ücretsiz mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Araç tamamen ücretsizdir; kayıt veya kurulum gerektirmez. Masaüstü, dizüstü, tablet ve telefonda her modern tarayıcıda çalışır ve yüklendikten sonra çevrimdışı çalışır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Zoom veya görüntülü görüşmeler için renkli ekranı aydınlatma olarak nasıl kullanırım?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Aracı ikinci bir ekranda, telefonda veya tablette açın, sıcak beyaz ya da Zoom hazır ayarını seçin ve tam ekrana geçin. Yumuşak, eşit bir dolgu ışığı için parlayan ekranı yüzünüze doğru tutun."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Monitörümü ölü piksel veya backlight bleed için nasıl test ederim?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tam ekrana geçin ve beyaz, siyah, kırmızı, yeşil ve maviyi sırayla gösterin. Ölü veya takılı piksel yanlış renkte kalır; backlight bleed ise siyah ekranda kenarlara yakın daha açık lekeler olarak görünür."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Geri sayım zamanlayıcısı tam ekranda çalışır mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Saat, dakika ve saniye ayarlayın, bir uyarı sesi seçin ve zamanlayıcıyı tam ekranda görünür tutun. Nerede görüneceğini seçebilir veya tamamen gizleyebilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hangi klavye kısayolları var?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zamanlayıcıyı başlatmak veya duraklatmak için Boşluk, sıfırlamak için R ve tam ekranı açıp kapatmak için F tuşuna basın."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -511,6 +592,92 @@
 </div>
 
   </div>
+
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Zamanlayıcılı ücretsiz tam ekran renkli ekran</h2>
+    <p><strong>Zamanlayıcılı Renkli Ekran</strong>, ekranınızı tam ekran, düz renkli temiz bir bloğa dönüştürür ve isteğe bağlı geri sayım zamanlayıcısı içerir. <strong>Beyaz ekran</strong>, <strong>siyah ekran</strong>, <strong>kırmızı ekran</strong>, <strong>yeşil ekran</strong> veya <strong>mavi ekran</strong> gibi bir hazır ayar seçin ya da renk seçiciyle istediğiniz tonu ayarlayın ve tam ekrana geçin. Her şey tarayıcıda çalışır: indirme yok, kayıt yok ve çevrimdışı çalışır.</p>
+
+    <h2>Renkli ekran ve zamanlayıcı nasıl kullanılır</h2>
+    <h3>1. Bir renk seçin</h3>
+    <p>Hazır bir renk düğmesine tıklayın veya istediğiniz herhangi bir onaltılık değeri girmek için renk seçiciyi açın.</p>
+    <h3>2. Tam ekrana geçin</h3>
+    <p>Tüm ekranı renkle doldurmak için <strong>Tam ekran</strong> düğmesine basın veya <kbd>F</kbd> tuşuna dokunun.</p>
+    <h3>3. İsteğe bağlı zamanlayıcı ayarlayın</h3>
+    <p>Saat, dakika ve saniye girin, bir uyarı sesi seçin ve zamanlayıcıyı <kbd>Boşluk</kbd> tuşuyla başlatın. Zamanlayıcıyı tam ekranda görünür tutabilir ve nerede görüneceğini seçebilirsiniz.</p>
+
+    <h2>Tam ekran renkli ekranın popüler kullanımları</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Görüntülü görüşme ve Zoom aydınlatması</h3>
+        <p>İkinci bir ekranda veya telefonda sıcak beyaz ya da Zoom hazır ayarını, Zoom, Teams ve Google Meet'te yüzünüzü aydınlatan yumuşak bir dolgu ışığı olarak kullanın.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Fotoğraf ve video dolgu ışığı</h3>
+        <p>Bir tableti veya monitörü portreler, ürün çekimleri ve yaratıcı renk efektleri için ayarlanabilir renkli bir ışık kaynağına dönüştürün.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Ölü piksel ve backlight bleed testi</h3>
+        <p>Ölü veya takılı pikselleri bulmak ve monitörde ışık sızmasını kontrol etmek için tam ekranda beyaz, siyah, kırmızı, yeşil ve maviyi sırayla gösterin.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Ortam ve atmosfer aydınlatması</h3>
+        <p>Bir odayı sakinleştirici renkle doldurun, rahatlatıcı bir sahne oluşturun veya parlak beyaz ekranı doğaçlama ışık paneli olarak kullanın.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Odaklanma ve Pomodoro seansları</h3>
+        <p>Pomodoro odak blokları, çalışma seansları, antrenmanlar veya kısa molalar için düz bir arka planı geri sayım zamanlayıcısıyla birleştirin.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Sunumlar ve etkinlikler</h3>
+        <p>Konuşmalar, atölyeler, sınıf etkinlikleri ve sahne zamanlaması için görünür bir geri sayımla temiz renkli bir arka plan gösterin.</p>
+      </div>
+    </div>
+
+    <h2>Sıkça sorulan sorular</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>Zamanlayıcılı Renkli Ekran ücretsiz mi?</summary>
+        <p>Evet. Araç tamamen ücretsizdir; kayıt veya kurulum gerektirmez. Masaüstü, dizüstü, tablet ve telefonda her modern tarayıcıda çalışır ve yüklendikten sonra çevrimdışı çalışır.</p>
+      </details>
+      <details>
+        <summary>Zoom veya görüntülü görüşmeler için renkli ekranı aydınlatma olarak nasıl kullanırım?</summary>
+        <p>Aracı ikinci bir ekranda, telefonda veya tablette açın, sıcak beyaz ya da Zoom hazır ayarını seçin ve tam ekrana geçin. Yumuşak, eşit bir dolgu ışığı için parlayan ekranı yüzünüze doğru tutun.</p>
+      </details>
+      <details>
+        <summary>Monitörümü ölü piksel veya backlight bleed için nasıl test ederim?</summary>
+        <p>Tam ekrana geçin ve beyaz, siyah, kırmızı, yeşil ve maviyi sırayla gösterin. Ölü veya takılı piksel yanlış renkte kalır; backlight bleed ise siyah ekranda kenarlara yakın daha açık lekeler olarak görünür.</p>
+      </details>
+      <details>
+        <summary>Geri sayım zamanlayıcısı tam ekranda çalışır mı?</summary>
+        <p>Evet. Saat, dakika ve saniye ayarlayın, bir uyarı sesi seçin ve zamanlayıcıyı tam ekranda görünür tutun. Nerede görüneceğini seçebilir veya tamamen gizleyebilirsiniz.</p>
+      </details>
+      <details>
+        <summary>Hangi klavye kısayolları var?</summary>
+        <p>Zamanlayıcıyı başlatmak veya duraklatmak için <kbd>Boşluk</kbd>, sıfırlamak için <kbd>R</kbd> ve tam ekranı açıp kapatmak için <kbd>F</kbd> tuşuna basın.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">Daha fazlasını mı istiyorsunuz? <a href="/about.html">Araç hakkında</a> okuyun, tüm <a href="/faq.html">SSS</a> bölümüne göz atın veya geri bildirim ve önerilerinizle <a href="/contact.html">bize ulaşın</a>.</p>
+  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">

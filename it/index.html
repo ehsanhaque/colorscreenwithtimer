@@ -49,12 +49,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Schermo a Colori con Timer",
-    "url": "https://colorscreenwithtimer.com/it/",
-    "description": "Schermo a colori online gratuito con timer per il conto alla rovescia personalizzabile. Perfetto per illuminazione, fotografia, videochiamate e sessioni di concentrazione.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Schermo a Colori con Timer",
+        "url": "https://colorscreenwithtimer.com/it/",
+        "description": "Schermo a colori online gratuito con timer per il conto alla rovescia personalizzabile. Perfetto per illuminazione, fotografia, videochiamate e sessioni di concentrazione.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Schermo colorato a schermo intero in bianco, nero, rosso, verde, blu, giallo, arancione, rosa e viola",
+          "Selettore di colore personalizzato per qualsiasi tonalità esadecimale",
+          "Timer per il conto alla rovescia integrato con suoni di avviso selezionabili",
+          "Posizione del timer regolabile in modalità schermo intero",
+          "Scorciatoie da tastiera per avvio, azzeramento e schermo intero",
+          "Funziona offline, senza registrazione né installazione"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Schermo Colorato con Timer è gratuito?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì. È completamente gratuito, senza registrazione né installazione. Funziona in qualsiasi browser moderno su desktop, laptop, tablet e cellulare e funziona offline una volta caricato."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come uso uno schermo colorato come luce per Zoom o le videochiamate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Apri lo strumento su un secondo schermo, sul telefono o su un tablet, scegli un bianco caldo o il preset Zoom e passa a schermo intero. Orienta lo schermo luminoso verso il viso per ottenere una luce di riempimento morbida e uniforme."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come testo il monitor per pixel morti o backlight bleed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Passa a schermo intero e scorri bianco, nero, rosso, verde e blu. Un pixel morto o bloccato rimane del colore sbagliato, mentre il backlight bleed appare come chiazze più chiare vicino ai bordi su uno schermo nero."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Il timer funziona a schermo intero?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì. Imposta ore, minuti e secondi, scegli un suono di avviso e mantieni il timer visibile a schermo intero. Puoi scegliere dove appare o nasconderlo del tutto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quali scorciatoie da tastiera ci sono?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Premi Spazio per avviare o mettere in pausa il timer, R per azzerarlo e F per attivare lo schermo intero."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
   <link rel="stylesheet" href="/src/global.css?v=30">
@@ -290,6 +371,91 @@
         </section>
       </div>
     </main>
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Schermo colorato a schermo intero gratuito con timer</h2>
+    <p><strong>Schermo Colorato con Timer</strong> trasforma il tuo display in un blocco pulito di colore pieno a schermo intero, con un timer per il conto alla rovescia opzionale integrato. Scegli un preset come <strong>schermo bianco</strong>, <strong>schermo nero</strong>, <strong>schermo rosso</strong>, <strong>schermo verde</strong> o <strong>schermo blu</strong>, oppure usa il selettore per impostare qualsiasi tonalità esatta e passa a schermo intero. Tutto funziona nel browser: nessun download, nessuna registrazione e funziona offline.</p>
+
+    <h2>Come usare lo schermo colorato e il timer</h2>
+    <h3>1. Scegli un colore</h3>
+    <p>Fai clic su un pulsante colore predefinito o apri il selettore di colore per impostare qualsiasi valore esadecimale.</p>
+    <h3>2. Attiva lo schermo intero</h3>
+    <p>Premi il pulsante <strong>Schermo intero</strong> o il tasto <kbd>F</kbd> per riempire l'intero schermo con il colore.</p>
+    <h3>3. Imposta un timer opzionale</h3>
+    <p>Inserisci ore, minuti e secondi, scegli un suono di avviso e avvia il timer con la <kbd>barra spaziatrice</kbd>. Puoi mantenere il timer visibile a schermo intero e scegliere dove appare.</p>
+
+    <h2>Usi popolari di uno schermo colorato a schermo intero</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Illuminazione per videochiamate e Zoom</h3>
+        <p>Usa un bianco caldo o il preset Zoom su un secondo schermo o sul telefono come luce di riempimento morbida che illumina il tuo viso su Zoom, Teams e Google Meet.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Luce di riempimento foto e video</h3>
+        <p>Trasforma un tablet o un monitor in una sorgente di luce colorata regolabile per ritratti, foto di prodotto ed effetti di colore creativi.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Test pixel morti e backlight bleed</h3>
+        <p>Scorri bianco, nero, rosso, verde e blu a schermo intero per individuare pixel morti o bloccati e verificare eventuali perdite di luce del monitor.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Illuminazione d'atmosfera</h3>
+        <p>Riempi una stanza con un colore rilassante, crea una scena tranquilla o usa uno schermo bianco luminoso come pannello luminoso improvvisato.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Sessioni di concentrazione e Pomodoro</h3>
+        <p>Abbina uno sfondo pieno al timer per blocchi di concentrazione Pomodoro, sessioni di studio, allenamenti o brevi pause.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Presentazioni ed eventi</h3>
+        <p>Mostra uno sfondo colorato pulito con un conto alla rovescia visibile per conferenze, workshop, attività in classe e gestione dei tempi sul palco.</p>
+      </div>
+    </div>
+
+    <h2>Domande frequenti</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>Schermo Colorato con Timer è gratuito?</summary>
+        <p>Sì. È completamente gratuito, senza registrazione né installazione. Funziona in qualsiasi browser moderno su desktop, laptop, tablet e cellulare e funziona offline una volta caricato.</p>
+      </details>
+      <details>
+        <summary>Come uso uno schermo colorato come luce per Zoom o le videochiamate?</summary>
+        <p>Apri lo strumento su un secondo schermo, sul telefono o su un tablet, scegli un bianco caldo o il preset Zoom e passa a schermo intero. Orienta lo schermo luminoso verso il viso per ottenere una luce di riempimento morbida e uniforme.</p>
+      </details>
+      <details>
+        <summary>Come testo il monitor per pixel morti o backlight bleed?</summary>
+        <p>Passa a schermo intero e scorri bianco, nero, rosso, verde e blu. Un pixel morto o bloccato rimane del colore sbagliato, mentre il backlight bleed appare come chiazze più chiare vicino ai bordi su uno schermo nero.</p>
+      </details>
+      <details>
+        <summary>Il timer funziona a schermo intero?</summary>
+        <p>Sì. Imposta ore, minuti e secondi, scegli un suono di avviso e mantieni il timer visibile a schermo intero. Puoi scegliere dove appare o nasconderlo del tutto.</p>
+      </details>
+      <details>
+        <summary>Quali scorciatoie da tastiera ci sono?</summary>
+        <p>Premi <kbd>Spazio</kbd> per avviare o mettere in pausa il timer, <kbd>R</kbd> per azzerarlo e <kbd>F</kbd> per attivare lo schermo intero.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">Vuoi saperne di più? Leggi <a href="/about.html">informazioni sullo strumento</a>, consulta le <a href="/faq.html">FAQ</a> complete o <a href="/contact.html">contattaci</a> per feedback e richieste.</p>
+  </section>
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">
     <div class="eyebrow">colorscreenwithtimer.com</div>
     <p style="margin-bottom: 0.5rem;">

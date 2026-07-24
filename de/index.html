@@ -61,12 +61,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Farbbildschirm mit Timer",
-    "url": "https://colorscreenwithtimer.com/de/",
-    "description": "Kostenloser Online-Vollbild-Farbbildschirm mit anpassbarem Countdown-Timer. Perfekt für Beleuchtung, Fotografie, Videoanrufe und Fokussitzungen.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": null,
+        "url": null,
+        "description": null,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Vollbild-Farbbildschirm in Weiß, Schwarz, Rot, Grün, Blau, Gelb, Orange, Rosa und Violett",
+          "Individuelle Farbauswahl für jeden Hex-Farbton",
+          "Integrierter Countdown-Timer mit wählbaren Signaltönen",
+          "Anpassbare Position des Timer-Overlays im Vollbildmodus",
+          "Tastenkürzel für Start, Zurücksetzen und Vollbild",
+          "Funktioniert offline, ohne Registrierung oder Installation"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ist Farbbildschirm mit Timer kostenlos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Das Tool ist völlig kostenlos, ohne Registrierung oder Installation. Es läuft in jedem modernen Browser auf Desktop, Laptop, Tablet und Handy und funktioniert nach dem Laden auch offline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie nutze ich einen Farbbildschirm als Beleuchtung für Zoom oder Videoanrufe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Öffnen Sie das Tool auf einem zweiten Bildschirm, Handy oder Tablet, wählen Sie ein warmes Weiß oder die Zoom-Voreinstellung und gehen Sie in den Vollbildmodus. Richten Sie den leuchtenden Bildschirm auf Ihr Gesicht, um ein weiches, gleichmäßiges Fülllicht zu erzeugen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie teste ich meinen Monitor auf tote Pixel oder Backlight-Bleeding?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wechseln Sie in den Vollbildmodus und durchlaufen Sie Weiß, Schwarz, Rot, Grün und Blau. Ein toter oder festsitzender Pixel bleibt in der falschen Farbe, während Backlight-Bleeding als hellere Flecken an den Rändern eines schwarzen Bildschirms sichtbar wird."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Funktioniert der Countdown-Timer im Vollbildmodus?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Stellen Sie Stunden, Minuten und Sekunden ein, wählen Sie einen Signalton und halten Sie den Timer im Vollbild sichtbar. Sie können festlegen, wo das Timer-Overlay erscheint, oder es ganz ausblenden."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welche Tastenkürzel gibt es?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Drücken Sie Leertaste zum Starten oder Pausieren des Timers, R zum Zurücksetzen und F zum Umschalten des Vollbildmodus."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -511,6 +592,92 @@
 </div>
 
   </div>
+
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Kostenloser Vollbild-Farbbildschirm mit Countdown-Timer</h2>
+    <p><strong>Farbbildschirm mit Timer</strong> verwandelt Ihren Bildschirm in eine saubere, bildschirmfüllende Fläche in einer einfarbigen Farbe – mit integriertem, optionalem Countdown-Timer. Wählen Sie eine Voreinstellung wie <strong>weißer Bildschirm</strong>, <strong>schwarzer Bildschirm</strong>, <strong>roter Bildschirm</strong>, <strong>grüner Bildschirm</strong> oder <strong>blauer Bildschirm</strong>, oder stellen Sie mit der Farbauswahl jeden gewünschten Farbton ein und wechseln Sie in den Vollbildmodus. Alles läuft direkt im Browser – kein Download, keine Anmeldung, und es funktioniert offline.</p>
+
+    <h2>So verwenden Sie den Farbbildschirm und Timer</h2>
+    <h3>1. Farbe auswählen</h3>
+    <p>Klicken Sie auf eine voreingestellte Farbschaltfläche oder öffnen Sie die Farbauswahl, um jeden beliebigen Hex-Farbwert einzustellen.</p>
+    <h3>2. Vollbild aktivieren</h3>
+    <p>Klicken Sie auf die Schaltfläche <strong>Vollbild</strong> oder drücken Sie die Taste <kbd>F</kbd>, um den gesamten Bildschirm mit der Farbe zu füllen.</p>
+    <h3>3. Optionalen Countdown-Timer einstellen</h3>
+    <p>Geben Sie Stunden, Minuten und Sekunden ein, wählen Sie einen Signalton und starten Sie den Timer mit der <kbd>Leertaste</kbd>. Der Timer kann im Vollbildmodus sichtbar bleiben, und Sie bestimmen, wo er erscheint.</p>
+
+    <h2>Beliebte Anwendungen für einen Vollbild-Farbbildschirm</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Beleuchtung für Videoanrufe & Zoom</h3>
+        <p>Nutzen Sie ein warmes Weiß oder die Zoom-Voreinstellung auf einem zweiten Bildschirm oder Handy als weiches Fülllicht, das Ihr Gesicht bei Zoom, Teams und Google Meet aufhellt.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Fülllicht für Foto & Video</h3>
+        <p>Verwandeln Sie ein Tablet oder einen Monitor in eine einstellbare farbige Lichtquelle für Porträts, Produktaufnahmen und kreative Farbeffekte.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Test auf Pixelfehler & Backlight-Bleeding</h3>
+        <p>Wechseln Sie im Vollbild durch reines Weiß, Schwarz, Rot, Grün und Blau, um tote oder festsitzende Pixel zu erkennen und den Monitor auf Lichthöfe zu prüfen.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Stimmungs- & Ambientebeleuchtung</h3>
+        <p>Tauchen Sie einen Raum in beruhigende Farbe, schaffen Sie eine entspannte Atmosphäre oder nutzen Sie einen hellen weißen Bildschirm als improvisiertes Lichtpanel.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Fokus- & Pomodoro-Sitzungen</h3>
+        <p>Kombinieren Sie einen einfarbigen Hintergrund mit dem Countdown-Timer für Pomodoro-Fokusblöcke, Lernphasen, Workouts oder kurze Pausen.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Präsentationen & Veranstaltungen</h3>
+        <p>Zeigen Sie einen sauberen farbigen Hintergrund mit sichtbarem Countdown für Vorträge, Workshops, Unterricht und Bühnentiming.</p>
+      </div>
+    </div>
+
+    <h2>Häufig gestellte Fragen</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>Ist Farbbildschirm mit Timer kostenlos?</summary>
+        <p>Ja. Das Tool ist völlig kostenlos, ohne Registrierung oder Installation. Es läuft in jedem modernen Browser auf Desktop, Laptop, Tablet und Handy und funktioniert nach dem Laden auch offline.</p>
+      </details>
+      <details>
+        <summary>Wie nutze ich einen Farbbildschirm als Beleuchtung für Zoom oder Videoanrufe?</summary>
+        <p>Öffnen Sie das Tool auf einem zweiten Bildschirm, Handy oder Tablet, wählen Sie ein warmes Weiß oder die Zoom-Voreinstellung und gehen Sie in den Vollbildmodus. Richten Sie den leuchtenden Bildschirm auf Ihr Gesicht, um ein weiches, gleichmäßiges Fülllicht zu erzeugen.</p>
+      </details>
+      <details>
+        <summary>Wie teste ich meinen Monitor auf tote Pixel oder Backlight-Bleeding?</summary>
+        <p>Wechseln Sie in den Vollbildmodus und durchlaufen Sie Weiß, Schwarz, Rot, Grün und Blau. Ein toter oder festsitzender Pixel bleibt in der falschen Farbe, während Backlight-Bleeding als hellere Flecken an den Rändern eines schwarzen Bildschirms sichtbar wird.</p>
+      </details>
+      <details>
+        <summary>Funktioniert der Countdown-Timer im Vollbildmodus?</summary>
+        <p>Ja. Stellen Sie Stunden, Minuten und Sekunden ein, wählen Sie einen Signalton und halten Sie den Timer im Vollbild sichtbar. Sie können festlegen, wo das Timer-Overlay erscheint, oder es ganz ausblenden.</p>
+      </details>
+      <details>
+        <summary>Welche Tastenkürzel gibt es?</summary>
+        <p>Drücken Sie <kbd>Leertaste</kbd> zum Starten oder Pausieren des Timers, <kbd>R</kbd> zum Zurücksetzen und <kbd>F</kbd> zum Umschalten des Vollbildmodus.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">Mehr erfahren? Lesen Sie <a href="/about.html">mehr über das Tool</a>, sehen Sie sich die vollständigen <a href="/faq.html">FAQ</a> an oder <a href="/contact.html">kontaktieren Sie uns</a> mit Feedback und Wünschen.</p>
+  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">

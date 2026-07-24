@@ -61,12 +61,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Кольоровий Екран з Таймером",
-    "url": "https://colorscreenwithtimer.com/uk/",
-    "description": "Безкоштовний онлайн повноекранний кольоровий екран з налаштовуваним таймером зворотного відліку. Ідеально підходить для освітлення, фотографії, відеодзвінків та сеансів концентрації.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": null,
+        "url": null,
+        "description": null,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Повноекранний кольоровий екран у білому, чорному, червоному, зеленому, синьому, жовтому, помаранчевому, рожевому та фіолетовому",
+          "Власна палітра для будь-якого шістнадцяткового відтінку",
+          "Вбудований таймер зворотного відліку з вибірними звуками сповіщення",
+          "Регульоване розташування таймера в повноекранному режимі",
+          "Комбінації клавіш для запуску, скидання та повного екрана",
+          "Працює офлайн, без реєстрації та встановлення"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Чи безкоштовний Кольоровий екран із таймером?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Так. Інструмент повністю безкоштовний, без реєстрації та встановлення. Він працює в будь-якому сучасному браузері на комп'ютері, ноутбуці, планшеті й телефоні та працює офлайн після завантаження."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Як використати кольоровий екран як освітлення для Zoom чи відеодзвінків?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Відкрийте інструмент на другому екрані, телефоні чи планшеті, оберіть тепле біле або пресет Zoom і перейдіть у повний екран. Спрямуйте світний екран на обличчя, щоб отримати м'яке рівномірне заповнювальне світло."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Як перевірити монітор на биті пікселі чи засвітлення підсвітки?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Перейдіть у повний екран і перемикайте біле, чорне, червоне, зелене та синє. Битий чи застряглий піксель залишається неправильного кольору, а засвітлення підсвітки видно як світліші плями біля країв на чорному екрані."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Чи працює таймер у повноекранному режимі?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Так. Задайте години, хвилини та секунди, оберіть звук сповіщення й тримайте таймер видимим у повному екрані. Ви можете обрати, де він з'являється, або сховати його зовсім."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Які є комбінації клавіш?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Натисніть Пробіл, щоб запустити чи призупинити таймер, R, щоб скинути його, і F, щоб перемкнути повний екран."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -511,6 +592,92 @@
 </div>
 
   </div>
+
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Безкоштовний повноекранний кольоровий екран із таймером</h2>
+    <p><strong>Кольоровий екран із таймером</strong> перетворює ваш дисплей на чистий повноекранний блок суцільного кольору з вбудованим необов'язковим таймером зворотного відліку. Оберіть пресет, як-от <strong>білий екран</strong>, <strong>чорний екран</strong>, <strong>червоний екран</strong>, <strong>зелений екран</strong> чи <strong>синій екран</strong>, або задайте будь-який відтінок через палітру та перейдіть у повноекранний режим. Усе працює в браузері: без завантажень, без реєстрації, і працює офлайн.</p>
+
+    <h2>Як користуватися кольоровим екраном і таймером</h2>
+    <h3>1. Оберіть колір</h3>
+    <p>Натисніть кнопку готового кольору або відкрийте палітру, щоб задати будь-яке шістнадцяткове значення.</p>
+    <h3>2. Увімкніть повний екран</h3>
+    <p>Натисніть кнопку <strong>Повний екран</strong> або клавішу <kbd>F</kbd>, щоб заповнити кольором увесь екран.</p>
+    <h3>3. Налаштуйте необов'язковий таймер</h3>
+    <p>Введіть години, хвилини та секунди, оберіть звук сповіщення й запустіть таймер клавішею <kbd>Пробіл</kbd>. Таймер може залишатися видимим у повноекранному режимі, а ви обираєте, де він з'являється.</p>
+
+    <h2>Популярні способи використання повноекранного кольорового екрана</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Освітлення для відеодзвінків і Zoom</h3>
+        <p>Використовуйте тепле біле або пресет Zoom на другому екрані чи телефоні як м'яке заповнювальне світло, що освітлює обличчя в Zoom, Teams і Google Meet.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Заповнювальне світло для фото та відео</h3>
+        <p>Перетворіть планшет або монітор на регульоване кольорове джерело світла для портретів, предметної зйомки та креативних колірних ефектів.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Тест на биті пікселі та засвітлення підсвітки</h3>
+        <p>Перемикайте біле, чорне, червоне, зелене та синє в повний екран, щоб виявити биті чи застряглі пікселі й перевірити засвітлення підсвітки монітора.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Атмосферне освітлення</h3>
+        <p>Наповніть кімнату заспокійливим кольором, створіть розслаблену сцену або використайте яскравий білий екран як імпровізовану світлову панель.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Сесії фокусування та Pomodoro</h3>
+        <p>Поєднайте суцільний фон із таймером для блоків фокусування Pomodoro, навчальних сесій, тренувань чи коротких перерв.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Презентації та заходи</h3>
+        <p>Показуйте чистий кольоровий фон із видимим відліком для доповідей, воркшопів, занять і таймінгу на сцені.</p>
+      </div>
+    </div>
+
+    <h2>Поширені запитання</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>Чи безкоштовний Кольоровий екран із таймером?</summary>
+        <p>Так. Інструмент повністю безкоштовний, без реєстрації та встановлення. Він працює в будь-якому сучасному браузері на комп'ютері, ноутбуці, планшеті й телефоні та працює офлайн після завантаження.</p>
+      </details>
+      <details>
+        <summary>Як використати кольоровий екран як освітлення для Zoom чи відеодзвінків?</summary>
+        <p>Відкрийте інструмент на другому екрані, телефоні чи планшеті, оберіть тепле біле або пресет Zoom і перейдіть у повний екран. Спрямуйте світний екран на обличчя, щоб отримати м'яке рівномірне заповнювальне світло.</p>
+      </details>
+      <details>
+        <summary>Як перевірити монітор на биті пікселі чи засвітлення підсвітки?</summary>
+        <p>Перейдіть у повний екран і перемикайте біле, чорне, червоне, зелене та синє. Битий чи застряглий піксель залишається неправильного кольору, а засвітлення підсвітки видно як світліші плями біля країв на чорному екрані.</p>
+      </details>
+      <details>
+        <summary>Чи працює таймер у повноекранному режимі?</summary>
+        <p>Так. Задайте години, хвилини та секунди, оберіть звук сповіщення й тримайте таймер видимим у повному екрані. Ви можете обрати, де він з'являється, або сховати його зовсім.</p>
+      </details>
+      <details>
+        <summary>Які є комбінації клавіш?</summary>
+        <p>Натисніть <kbd>Пробіл</kbd>, щоб запустити чи призупинити таймер, <kbd>R</kbd>, щоб скинути його, і <kbd>F</kbd>, щоб перемкнути повний екран.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">Хочете дізнатися більше? Прочитайте <a href="/about.html">про інструмент</a>, перегляньте повний розділ <a href="/faq.html">поширених запитань</a> або <a href="/contact.html">зв'яжіться з нами</a>, надіславши відгуки та побажання.</p>
+  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">

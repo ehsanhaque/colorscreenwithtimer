@@ -61,12 +61,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Pantalla de Color con Temporizador",
-    "url": "https://colorscreenwithtimer.com/es/",
-    "description": "Pantalla de color en línea gratuita con temporizador de cuenta regresiva personalizable. Perfecta para iluminación, fotografía, videollamadas y sesiones de concentración.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": null,
+        "url": null,
+        "description": null,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Pantalla de color a pantalla completa en blanco, negro, rojo, verde, azul, amarillo, naranja, rosa y morado",
+          "Selector de color personalizado para cualquier tono hexadecimal",
+          "Temporizador de cuenta atrás integrado con sonidos de alerta seleccionables",
+          "Posición ajustable del temporizador en modo pantalla completa",
+          "Atajos de teclado para iniciar, reiniciar y pantalla completa",
+          "Funciona sin conexión, sin registro ni instalación"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Es gratis Pantalla de Color con Temporizador?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Es totalmente gratis, sin registro ni instalación. Funciona en cualquier navegador moderno en ordenador, portátil, tablet y móvil, y funciona sin conexión una vez cargado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo uso una pantalla de color como luz para Zoom o videollamadas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Abre la herramienta en una segunda pantalla, el móvil o una tablet, selecciona un blanco cálido o el preajuste Zoom y ponla a pantalla completa. Orienta la pantalla iluminada hacia tu cara para lograr una luz de relleno suave y uniforme."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo pruebo mi monitor en busca de píxeles muertos o backlight bleed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pon la pantalla completa y recorre blanco, negro, rojo, verde y azul. Un píxel muerto o atascado se ve como un punto que mantiene el color incorrecto, mientras que el backlight bleed aparece como manchas más claras cerca de los bordes en una pantalla negra."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Funciona el temporizador en pantalla completa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Ajusta horas, minutos y segundos, elige un sonido de alerta y mantén el temporizador visible en pantalla completa. Puedes elegir dónde aparece o ocultarlo por completo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué atajos de teclado hay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pulsa Espacio para iniciar o pausar el temporizador, R para reiniciarlo y F para activar la pantalla completa."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -511,6 +592,92 @@
 </div>
 
   </div>
+
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Pantalla de color a pantalla completa con temporizador gratis</h2>
+    <p><strong>Pantalla de Color con Temporizador</strong> convierte tu pantalla en un bloque limpio de color sólido a pantalla completa, con un temporizador de cuenta atrás opcional integrado. Elige un preajuste como <strong>pantalla blanca</strong>, <strong>pantalla negra</strong>, <strong>pantalla roja</strong>, <strong>pantalla verde</strong> o <strong>pantalla azul</strong>, o usa el selector de color para fijar cualquier tono exacto y pasa a pantalla completa. Todo funciona en el navegador: sin descargas, sin registro y funciona sin conexión.</p>
+
+    <h2>Cómo usar la pantalla de color y el temporizador</h2>
+    <h3>1. Elige un color</h3>
+    <p>Haz clic en un botón de color predefinido o abre el selector de color para introducir cualquier valor hexadecimal que necesites.</p>
+    <h3>2. Activa pantalla completa</h3>
+    <p>Pulsa el botón <strong>Pantalla completa</strong> o la tecla <kbd>F</kbd> para llenar toda la pantalla con el color.</p>
+    <h3>3. Configura un temporizador opcional</h3>
+    <p>Introduce horas, minutos y segundos, elige un sonido de alerta e inicia el temporizador con la <kbd>barra espaciadora</kbd>. Puedes mantener el temporizador visible en pantalla completa y elegir dónde aparece.</p>
+
+    <h2>Usos populares de una pantalla de color a pantalla completa</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Iluminación para videollamadas y Zoom</h3>
+        <p>Usa un blanco cálido o el preajuste Zoom en una segunda pantalla o el móvil como luz de relleno suave que ilumina tu rostro en Zoom, Teams y Google Meet.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Luz de relleno para foto y vídeo</h3>
+        <p>Convierte una tablet o un monitor en una fuente de luz de color ajustable para retratos, fotos de producto y efectos de color creativos.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Test de píxeles muertos y backlight bleed</h3>
+        <p>Recorre blanco, negro, rojo, verde y azul en pantalla completa para detectar píxeles muertos o atascados y comprobar si el monitor tiene fugas de luz.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Iluminación ambiental y de ambiente</h3>
+        <p>Llena una habitación de color relajante, crea una escena tranquila o usa una pantalla blanca brillante como panel de luz improvisado.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Sesiones de concentración y Pomodoro</h3>
+        <p>Combina un fondo sólido con el temporizador para hacer bloques de concentración Pomodoro, sesiones de estudio, entrenamientos o descansos cortos.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Presentaciones y eventos</h3>
+        <p>Muestra un fondo de color limpio con una cuenta atrás visible para charlas, talleres, actividades de clase y control de tiempos en escena.</p>
+      </div>
+    </div>
+
+    <h2>Preguntas frecuentes</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>¿Es gratis Pantalla de Color con Temporizador?</summary>
+        <p>Sí. Es totalmente gratis, sin registro ni instalación. Funciona en cualquier navegador moderno en ordenador, portátil, tablet y móvil, y funciona sin conexión una vez cargado.</p>
+      </details>
+      <details>
+        <summary>¿Cómo uso una pantalla de color como luz para Zoom o videollamadas?</summary>
+        <p>Abre la herramienta en una segunda pantalla, el móvil o una tablet, selecciona un blanco cálido o el preajuste Zoom y ponla a pantalla completa. Orienta la pantalla iluminada hacia tu cara para lograr una luz de relleno suave y uniforme.</p>
+      </details>
+      <details>
+        <summary>¿Cómo pruebo mi monitor en busca de píxeles muertos o backlight bleed?</summary>
+        <p>Pon la pantalla completa y recorre blanco, negro, rojo, verde y azul. Un píxel muerto o atascado se ve como un punto que mantiene el color incorrecto, mientras que el backlight bleed aparece como manchas más claras cerca de los bordes en una pantalla negra.</p>
+      </details>
+      <details>
+        <summary>¿Funciona el temporizador en pantalla completa?</summary>
+        <p>Sí. Ajusta horas, minutos y segundos, elige un sonido de alerta y mantén el temporizador visible en pantalla completa. Puedes elegir dónde aparece o ocultarlo por completo.</p>
+      </details>
+      <details>
+        <summary>¿Qué atajos de teclado hay?</summary>
+        <p>Pulsa <kbd>Espacio</kbd> para iniciar o pausar el temporizador, <kbd>R</kbd> para reiniciarlo y <kbd>F</kbd> para activar la pantalla completa.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">¿Quieres saber más? Lee <a href="/about.html">sobre la herramienta</a>, consulta las <a href="/faq.html">preguntas frecuentes</a> o <a href="/contact.html">ponte en contacto</a> con comentarios y sugerencias.</p>
+  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">

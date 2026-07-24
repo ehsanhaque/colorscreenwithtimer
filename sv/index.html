@@ -61,12 +61,93 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Färgskärm med Timer",
-    "url": "https://colorscreenwithtimer.com/sv/",
-    "description": "Gratis online helskärm färgskärm med anpassningsbar nedräkningstimer. Perfekt för belysning, fotografering, videosamtal och fokussessioner.",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Any"
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": null,
+        "url": null,
+        "description": null,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with JavaScript enabled",
+        "inLanguage": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "ja",
+          "ko",
+          "ms",
+          "pl",
+          "pt",
+          "sv",
+          "tr",
+          "uk"
+        ],
+        "image": "https://colorscreenwithtimer.com/og-image.jpg",
+        "screenshot": "https://colorscreenwithtimer.com/og-image.jpg",
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Helskärm i färg i vitt, svart, rött, grönt, blått, gult, orange, rosa och lila",
+          "Anpassad färgväljare för valfri hex-nyans",
+          "Inbyggd nedräkningstimer med valbara larmljud",
+          "Justerbar timerposition i helskärmsläge",
+          "Tangentbordsgenvägar för start, återställning och helskärm",
+          "Fungerar offline, utan registrering eller installation"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Är Färgskärm med Timer gratis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Verktyget är helt gratis, utan registrering eller installation. Det fungerar i alla moderna webbläsare på dator, laptop, surfplatta och mobil, och fungerar offline när det har laddats."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur använder jag en färgskärm som belysning för Zoom eller videosamtal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Öppna verktyget på en andra skärm, mobil eller surfplatta, välj ett varmt vitt eller Zoom-förinställningen och gå till helskärm. Rikta den lysande skärmen mot ansiktet för ett mjukt, jämnt utfyllnadsljus."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur testar jag min skärm för döda pixlar eller backlight bleed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gå till helskärm och växla mellan vitt, svart, rött, grönt och blått. En död eller fastnad pixel stannar i fel färg, medan backlight bleed syns som ljusare fläckar nära kanterna på en svart skärm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fungerar nedräkningstimern i helskärm?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Ställ in timmar, minuter och sekunder, välj ett larmljud och håll timern synlig i helskärm. Du kan välja var den visas eller dölja den helt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilka tangentbordsgenvägar finns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tryck på Mellanslag för att starta eller pausa timern, R för att nollställa den och F för att växla helskärm."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -511,6 +592,92 @@
 </div>
 
   </div>
+
+  <style>
+    .seo-content { max-width: 880px; margin: 0 auto; padding: var(--space-2xl, 3rem) 1.25rem var(--space-xl, 2rem); color: var(--color-gray-700, #374151); line-height: 1.7; }
+    .seo-content h2 { font-size: 1.6rem; line-height: 1.3; margin: var(--space-2xl, 3rem) 0 var(--space-md, 1rem); color: var(--color-gray-900, #111827); }
+    .seo-content h2:first-of-type { margin-top: 0; }
+    .seo-content h3 { font-size: 1.15rem; margin: var(--space-lg, 1.5rem) 0 var(--space-xs, 0.5rem); color: var(--color-gray-800, #1f2937); }
+    .seo-content p { margin: 0 0 var(--space-md, 1rem); }
+    .seo-content a { color: var(--color-purple, #a855f7); font-weight: 600; text-decoration: none; }
+    .seo-content a:hover { text-decoration: underline; }
+    .seo-usecases { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-md, 1rem); margin: var(--space-md, 1rem) 0 var(--space-lg, 1.5rem); }
+    .seo-usecase { background: var(--color-gray-50, #f9fafb); border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-lg, 1rem); padding: var(--space-lg, 1.5rem); box-shadow: var(--shadow-sm); }
+    .seo-usecase h3 { margin-top: 0; }
+    .seo-usecase p { margin-bottom: 0; font-size: 0.95rem; }
+    .seo-faq { margin-top: var(--space-md, 1rem); }
+    .seo-faq details { border: 1px solid var(--color-gray-200, #e5e7eb); border-radius: var(--radius-md, 0.75rem); padding: var(--space-md, 1rem) var(--space-lg, 1.5rem); margin-bottom: var(--space-sm, 0.75rem); background: var(--color-white, #fff); }
+    .seo-faq summary { font-weight: 600; cursor: pointer; color: var(--color-gray-900, #111827); font-size: 1.02rem; }
+    .seo-faq details[open] summary { margin-bottom: var(--space-xs, 0.5rem); }
+    .seo-faq p { margin-bottom: 0; }
+  </style>
+
+  <section class="seo-content" aria-labelledby="about-tool-heading">
+    <h2 id="about-tool-heading">Gratis helskärm i färg med timer</h2>
+    <p><strong>Färgskärm med Timer</strong> förvandlar din skärm till ett rent helskärmsfält i en enfärgad färg, med en valfri nedräkningstimer inbyggd. Välj en förinställning som <strong>vit skärm</strong>, <strong>svart skärm</strong>, <strong>röd skärm</strong>, <strong>grön skärm</strong> eller <strong>blå skärm</strong>, eller använd färgväljaren för att ställa in valfri nyans och gå till helskärm. Allt körs i webbläsaren – ingen nedladdning, ingen registrering, och det fungerar offline.</p>
+
+    <h2>Så använder du färgskärmen och timern</h2>
+    <h3>1. Välj en färg</h3>
+    <p>Klicka på en förinställd färgknapp eller öppna färgväljaren för att ange valfritt hex-värde.</p>
+    <h3>2. Gå till helskärm</h3>
+    <p>Tryck på knappen <strong>Helskärm</strong> eller tangenten <kbd>F</kbd> för att fylla hela skärmen med färgen.</p>
+    <h3>3. Ställ in en valfri timer</h3>
+    <p>Ange timmar, minuter och sekunder, välj ett larmljud och starta timern med <kbd>mellanslag</kbd>. Du kan låta timern synas i helskärm och välja var den visas.</p>
+
+    <h2>Populära sätt att använda en helskärm i färg</h2>
+    <div class="seo-usecases">
+      <div class="seo-usecase">
+        <h3>Belysning för videosamtal och Zoom</h3>
+        <p>Använd ett varmt vitt eller Zoom-förinställningen på en andra skärm eller mobil som ett mjukt utfyllnadsljus som lyser upp ditt ansikte på Zoom, Teams och Google Meet.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Utfyllnadsljus för foto och video</h3>
+        <p>Gör en surfplatta eller skärm till en justerbar färgad ljuskälla för porträtt, produktbilder och kreativa färgeffekter.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Test av döda pixlar och backlight bleed</h3>
+        <p>Växla mellan vitt, svart, rött, grönt och blått i helskärm för att hitta döda eller fastnade pixlar och kontrollera skärmens ljusläckage.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Stämnings- och ambient belysning</h3>
+        <p>Fyll ett rum med en lugnande färg, skapa en avslappnad stämning eller använd en ljus vit skärm som en improviserad ljuspanel.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Fokus- och Pomodoro-pass</h3>
+        <p>Kombinera en enfärgad bakgrund med nedräkningstimern för Pomodoro-fokusblock, pluggpass, träning eller korta pauser.</p>
+      </div>
+      <div class="seo-usecase">
+        <h3>Presentationer och evenemang</h3>
+        <p>Visa en ren färgad bakgrund med en synlig nedräkning för föredrag, workshops, klassrumsaktiviteter och scentiming.</p>
+      </div>
+    </div>
+
+    <h2>Vanliga frågor</h2>
+    <div class="seo-faq">
+      <details open>
+        <summary>Är Färgskärm med Timer gratis?</summary>
+        <p>Ja. Verktyget är helt gratis, utan registrering eller installation. Det fungerar i alla moderna webbläsare på dator, laptop, surfplatta och mobil, och fungerar offline när det har laddats.</p>
+      </details>
+      <details>
+        <summary>Hur använder jag en färgskärm som belysning för Zoom eller videosamtal?</summary>
+        <p>Öppna verktyget på en andra skärm, mobil eller surfplatta, välj ett varmt vitt eller Zoom-förinställningen och gå till helskärm. Rikta den lysande skärmen mot ansiktet för ett mjukt, jämnt utfyllnadsljus.</p>
+      </details>
+      <details>
+        <summary>Hur testar jag min skärm för döda pixlar eller backlight bleed?</summary>
+        <p>Gå till helskärm och växla mellan vitt, svart, rött, grönt och blått. En död eller fastnad pixel stannar i fel färg, medan backlight bleed syns som ljusare fläckar nära kanterna på en svart skärm.</p>
+      </details>
+      <details>
+        <summary>Fungerar nedräkningstimern i helskärm?</summary>
+        <p>Ja. Ställ in timmar, minuter och sekunder, välj ett larmljud och håll timern synlig i helskärm. Du kan välja var den visas eller dölja den helt.</p>
+      </details>
+      <details>
+        <summary>Vilka tangentbordsgenvägar finns?</summary>
+        <p>Tryck på <kbd>Mellanslag</kbd> för att starta eller pausa timern, <kbd>R</kbd> för att nollställa den och <kbd>F</kbd> för att växla helskärm.</p>
+      </details>
+    </div>
+
+    <p style="margin-top: var(--space-xl, 2rem);">Vill du veta mer? Läs <a href="/about.html">om verktyget</a>, bläddra i hela <a href="/faq.html">FAQ</a> eller <a href="/contact.html">kontakta oss</a> med feedback och önskemål.</p>
+  </section>
 
   <!-- ==================== FOOTER ==================== -->
   <footer style="text-align: center; padding: 3rem 1rem 2rem; color: var(--color-gray-600); font-size: 0.875rem;">
