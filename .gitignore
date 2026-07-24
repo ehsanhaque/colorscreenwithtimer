@@ -1,5 +1,6 @@
 # Configuration files with sensitive data
 *service-account*.json
+config.json
 
 # SQLite databases
 *.db
